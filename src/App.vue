@@ -22,6 +22,7 @@
   background-size: cover;
   background-position: center;
 
+
   filter: blur(15px);
   z-index: -1;
 }
