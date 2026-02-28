@@ -126,7 +126,7 @@ import Tag from 'primevue/tag';
 }
 
 .tag:hover {
-    transform: translateY(-10px);
+    transform: scale(1.05);
 }
 
 .main>h1 {
