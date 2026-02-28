@@ -1,6 +1,7 @@
 <script setup>
-  import Header from './components/Header.vue';
-  import Cards from './components/Cards.vue';
+  import Header from './components/Header.vue'
+  import Cards from './components/Cards.vue'
+  import Introduction from './components/Introduction.vue'
 </script>
 
 <template>
@@ -8,6 +9,7 @@
   <div class="content">
     <Header />
     <Cards />
+    <Introduction />
   </div>
 </template>
 

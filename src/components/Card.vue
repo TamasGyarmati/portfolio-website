@@ -32,7 +32,8 @@ import Card from 'primevue/card';
 .main>h1 {
     margin-left: 5px;
     margin-bottom: 0;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
+    color: burlywood;
 }
 
 .main {
