@@ -8,8 +8,8 @@
   <div class="background"></div>
   <div class="content">
     <Header />
-    <Cards />
     <Introduction />
+    <Cards />
   </div>
 </template>
 

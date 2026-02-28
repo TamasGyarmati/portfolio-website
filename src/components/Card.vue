@@ -57,7 +57,9 @@ import Card from 'primevue/card';
 .uniList > li {
   padding-bottom: 15px;
   padding-left: 15px;
+  padding-right: 20px;
   list-style-type: none;
+  text-align: justify;
 }
 
 .uniList > li::marker {
