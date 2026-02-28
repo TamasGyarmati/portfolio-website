@@ -47,4 +47,12 @@ const cards = [
   flex-direction: row;
   align-items: stretch;
 }
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+}
 </style>

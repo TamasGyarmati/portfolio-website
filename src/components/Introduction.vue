@@ -27,4 +27,11 @@
     max-width: 600px;
     font-size: 20px;
 }
+@media (max-width: 768px) {
+    .container {
+        max-width: 90%;
+        font-size: 16px;
+        padding: 0 10px;
+    }
+}
 </style>

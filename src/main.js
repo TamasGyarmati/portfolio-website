@@ -6,6 +6,8 @@ import './assets/main.css'
 import Aura from '@primeuix/themes/aura'
 import 'primeicons/primeicons.css'
 import AnimateOnScroll from 'primevue/animateonscroll'
+import 'primeflex/primeflex.css'
+import ScrollTop from 'primevue/scrolltop'
 
 const app = createApp(App)
 
@@ -15,6 +17,8 @@ app.use(PrimeVue, {
   }
 })
 app.directive('animateonscroll', AnimateOnScroll)
+
+app.component('ScrollTop', ScrollTop)
 
 app.use(router)
 

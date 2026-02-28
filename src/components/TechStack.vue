@@ -136,4 +136,34 @@ import Tag from 'primevue/tag';
     color: burlywood;
     text-align: center;
 }
+
+@media (max-width: 768px) {
+    .sub-container {
+        gap: 20px;
+    }
+
+    .stack-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .programming-languages,
+    .web-development,
+    .database,
+    .tools-technologies {
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    .myCard {
+        max-width: 95%;
+        margin: 0 auto;
+    }
+
+    .main > h1 {
+        font-size: 28px;
+        padding-bottom: 15px;
+    }
+}
 </style>

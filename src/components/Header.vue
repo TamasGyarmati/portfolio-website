@@ -84,6 +84,7 @@
         padding-top: 0;
     }
 
+    /*
     .typewriter {
         overflow: hidden;
         display: inline-block;
@@ -95,7 +96,7 @@
             typing 5s steps(40, end),
             blink-caret .75s step-end infinite;
     }
-
+ 
     @keyframes typing {
         from { width: 0 }
         to { width: 18ch }
@@ -104,5 +105,22 @@
     @keyframes blink-caret {
         from, to { border-color: transparent }
         50% { border-color: white; }
+    }*/
+
+    @media (max-width: 768px) {
+    .subclass {
+        flex-direction: column; /* sorba rendezi az ikon+szöveg párokat */
+        gap: 15px; /* kisebb rés a mobilhoz */
+        align-items: center;
+        font-size: 12px; /* kicsit nagyobb, mobilon olvashatóbb */
     }
+
+    .myHeader {
+        font-size: 36px; /* kisebb címsor mobilon */
+    }
+
+    .myHeaderType {
+        font-size: 24px; /* kisebb alcím mobilon */
+    }
+}
 </style>

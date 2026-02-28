@@ -81,4 +81,35 @@ import Card from 'primevue/card';
 .myCard:hover {
   transform: translateY(-10px);
 }
+
+@media (max-width: 768px) {
+  .main {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 30px;
+  }
+
+  .main > h1 {
+    font-size: 28px;
+    text-align: center;
+    padding-bottom: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .uniList > li {
+    font-size: 14px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .myCard {
+    max-width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
 </style>

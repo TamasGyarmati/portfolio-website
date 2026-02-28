@@ -12,6 +12,7 @@
     <Introduction />
     <TechStack />
     <Cards />
+    <ScrollTop class="custom-scrolltop" threshold="50" behavior="smooth" />
   </div>
 </template>
 
