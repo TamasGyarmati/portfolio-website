@@ -38,7 +38,7 @@ const cards = [
             :location="card.location"
             :content="card.content"
         />
-  </div>
+    </div>
 </template>
 
 <style scoped>

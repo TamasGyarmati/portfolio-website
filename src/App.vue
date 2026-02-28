@@ -2,6 +2,7 @@
   import Header from './components/Header.vue'
   import Cards from './components/Cards.vue'
   import Introduction from './components/Introduction.vue'
+  import TechStack from './components/TechStack.vue'
 </script>
 
 <template>
@@ -9,6 +10,7 @@
   <div class="content">
     <Header />
     <Introduction />
+    <TechStack />
     <Cards />
   </div>
 </template>
