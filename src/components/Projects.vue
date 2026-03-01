@@ -11,9 +11,11 @@
                 <div class="title-container">
                     <p>Room Planner (Web Application)</p>
                     <div class="tags">
-                        <Tag class="tag csharp" severity="success" value="C#" />
-                        <Tag class="tag javascript" severity="danger" value="JavaScript"></Tag>
-                        <Tag class="tag html-css" severity="danger" value="HTML, CSS"></Tag>
+                        <Tag class="tag csharp" value="C#" />
+                        <Tag class="tag aspnet" value="ASP.NET Core" />
+                        <Tag class="tag javascript" value="JavaScript" />
+                        <Tag class="tag html" value="HTML" />
+                        <Tag class="tag css" value="CSS" />
                     </div>
                 </div>
             </template>
@@ -34,11 +36,12 @@
                 <div class="title-container">
                     <p>Food Order (API)</p>
                     <div class="tags">
-                        <Tag class="tag csharp" severity="success" value="C#" />
-                        <Tag class="tag" severity="success" value="SignalR" />
-                        <Tag class="tag" severity="success" value="Hangfire" />
-                        <Tag class="tag" severity="success" value="JWT" />
-                        <Tag class="tag" severity="success" value="EFCore" />
+                        <Tag class="tag csharp" value="C#" />
+                        <Tag class="tag" severity="secondary" value="SignalR" />
+                        <Tag class="tag" severity="secondary" value="Hangfire" />
+                        <Tag class="tag" severity="secondary" value="JWT" />
+                        <Tag class="tag" severity="secondary" value="EFCore" />
+                        <Tag class="tag" severity="secondary" value="AutoMapper" />
                     </div>
                 </div>
             </template>
@@ -136,16 +139,21 @@
 }
 ::v-deep(.aspnet), ::v-deep(.csharp) {
     background-color: #5A2E90;
-    color: #ddcef0;
+    color: white;
     border: none;
 }
 ::v-deep(.javascript) {
     background-color: #F8E017;
-    color: #695e03; 
+    color: black; 
     border: none;
 }
-::v-deep(.html-css) {
+::v-deep(.html) {
     background-color: #F15B2A;
+    color: white;
+    border: none;
+}
+::v-deep(.css) {
+    background-color: #2581FF;
     color: white;
     border: none;
 }

@@ -13,33 +13,34 @@ import Tag from 'primevue/tag';
                         <div class="stack-row">
                             <span>Programming Languages</span>
                             <div class="programming-languages">
-                                <Tag class="tag csharp" severity="success" value="C#"></Tag>
-                                <Tag class="tag javascript" severity="danger" value="JavaScript"></Tag>
+                                <Tag class="tag csharp" value="C#" />
+                                <Tag class="tag javascript" value="JavaScript" />
                             </div>
                         </div>
                         <div class="stack-row">
                             <span>Web Development</span>
                             <div class="web-development">
-                                <Tag class="tag aspnet" severity="info" value="ASP.NET Core"></Tag>
-                                <Tag class="tag" severity="success" value="Vue.js"></Tag>
-                                <Tag class="tag html-css" severity="danger" value="HTML, CSS"></Tag>
+                                <Tag class="tag aspnet" value="ASP.NET Core" />
+                                <Tag class="tag" severity="success" value="Vue.js" />
+                                <Tag class="tag html" value="HTML" />
+                                <Tag class="tag css" value="CSS" />
                             </div>
                         </div>
                         <div class="stack-row">
                             <span>Database</span>
                             <div class="database">
-                                <Tag class="tag" severity="info" value="Microsoft SQL Server"></Tag>
-                                <Tag class="tag ef-core" severity="success" value="Entity Framework (ORM)"></Tag>
-                                <Tag class="tag oracle-sql" severity="danger" value="Oracle SQL Developer"></Tag>
+                                <Tag class="tag" severity="info" value="Microsoft SQL Server" />
+                                <Tag class="tag ef-core" value="Entity Framework (ORM)" />
+                                <Tag class="tag oracle-sql" value="Oracle SQL Developer" />
                             </div>
                         </div>
                         <div class="stack-row">
                             <span>Tools & Technologies</span>
                             <div class="tools-technologies">
-                                <Tag class="tag" severity="info" value="Microsoft Azure"></Tag>
-                                <Tag class="tag" severity="secondary" value="Git, GitHub"></Tag>
-                                <Tag class="tag postman-bruno" severity="danger" value="Postman, Bruno"></Tag>
-                                <Tag class="tag agile-scrum" severity="warn" value="Agile / Scrum methodologies"></Tag>
+                                <Tag class="tag" severity="info" value="Microsoft Azure" />
+                                <Tag class="tag" severity="secondary" value="Git, GitHub" />
+                                <Tag class="tag postman-bruno" value="Postman, Bruno" />
+                                <Tag class="tag agile-scrum" value="Agile / Scrum methodologies" />
                             </div>
                         </div>
                     </div>
@@ -52,19 +53,19 @@ import Tag from 'primevue/tag';
 <style scoped>
 ::v-deep(.javascript) {
     background-color: #F8E017;
-    color: #695e03; 
+    color: black; 
     border: none;
 }
 
 ::v-deep(.aspnet), ::v-deep(.csharp), ::v-deep(.ef-core) {
     background-color: #5A2E90;
-    color: #ddcef0;
+    color: white;
     border: none;
 }
 
 ::v-deep(.oracle-sql) {
     background-color: #D12024;
-    color: #f8d0d1;
+    color: white;
     border: none;
 }
 
@@ -74,8 +75,14 @@ import Tag from 'primevue/tag';
     border: none;
 }
 
-::v-deep(.html-css) {
+::v-deep(.html) {
     background-color: #F15B2A;
+    color: white;
+    border: none;
+}
+
+::v-deep(.css) {
+    background-color: #2581FF;
     color: white;
     border: none;
 }
