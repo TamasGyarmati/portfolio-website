@@ -109,18 +109,18 @@
 
     @media (max-width: 768px) {
     .subclass {
-        flex-direction: column; /* sorba rendezi az ikon+szöveg párokat */
-        gap: 15px; /* kisebb rés a mobilhoz */
+        flex-direction: column;
+        gap: 15px;
         align-items: center;
-        font-size: 12px; /* kicsit nagyobb, mobilon olvashatóbb */
+        font-size: 12px;
     }
 
     .myHeader {
-        font-size: 36px; /* kisebb címsor mobilon */
+        font-size: 36px;
     }
 
     .myHeaderType {
-        font-size: 24px; /* kisebb alcím mobilon */
+        font-size: 24px;
     }
 }
 </style>

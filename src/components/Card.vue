@@ -39,9 +39,9 @@ import Card from 'primevue/card';
 .main {
     display: flex;
     flex-direction: column;
-    margin-top: 50px;
-    margin-left: 50px;
-    margin-right: 50px;
+    align-items: center;
+    margin-top: 60px;
+    padding: 0 1.5rem;
 }
 
 .spans {
@@ -75,7 +75,7 @@ import Card from 'primevue/card';
 .myCard {
   transition: .4s;
   max-width: 700px;
-  flex: 1;
+  width: 100%;
 }
 
 .myCard:hover {

@@ -76,7 +76,7 @@ import Tag from 'primevue/tag';
 
 ::v-deep(.html-css) {
     background-color: #F15B2A;
-    color: #fec4af;
+    color: white;
     border: none;
 }
 
