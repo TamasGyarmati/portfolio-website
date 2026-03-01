@@ -19,7 +19,7 @@
             </template>
             <template #content>
                 <div class="sub-container">
-                    <img src="../assets/placeholder.jpg" alt="">
+                    <img src="../assets/furniture.png" alt="">
                 </div>
                 <p class="description">
                     This application arranges given furniture items within a room so that none of them overlap. 
@@ -42,7 +42,7 @@
             </template>
             <template #content>
                 <div class="sub-container">
-                    <img src="../assets/placeholder.jpg" alt="">
+                    <img src="../assets/furniture.png" alt="">
                 </div>
                 <p class="description">
                     A layered .NET 8.0 food ordering API built with clean architecture principles. 
@@ -67,9 +67,12 @@
     display: flex;
     flex-direction: row;
     align-items: stretch;
-    gap: 100px;
-    margin-left: 50px;
-    margin-right: 50px;
+    flex-wrap: wrap;
+    justify-content: center; /* Középre zárja a kártyákat */
+    gap: 40px;               /* 100px túl sok volt, a 40px barátibb */
+    margin: 0 auto;          /* Középre rendezi az egész konténert */
+    max-width: 1400px;       /* Ne nyúljon el végtelenül nagy monitoron */
+    padding: 0 20px;
 }
 .myCard {
     transition: .4s;
@@ -84,6 +87,7 @@
     flex-wrap: wrap;
     gap: 10px;
     align-items: center;
+    justify-content: center;
 }
 .tag {
     transition: .4s;
@@ -101,8 +105,14 @@
     transform: scale(1.1);
 }
 .sub-container>img {
-    width: 300px;
+    width: 550px;
     margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: transform 0.4s ease;
+}
+.sub-container>img:hover {
+    transform: scale(1.1);
 }
 .title-container {
     display: flex;
@@ -140,33 +150,36 @@
 @media (max-width: 768px) {
     .container {
         flex-direction: column;
-        gap: 40px;
-        margin-left: 20px;
-        margin-right: 20px;
+        align-items: center; /* Kártyák középre igazítása mobilon */
+        gap: 30px;
+        margin-left: 15px;
+        margin-right: 15px;
     }
 
-    .sub-container {
-        flex-direction: column;
-        align-items: center;
-        gap: 20px;
-    }
-
-    .sub-container > img {
+    .myCard {
+        max-width: 100%;    /* Mobilon töltse ki a szélességet */
         width: 100%;
-        max-width: 350px;
     }
 
     .title-container {
         flex-direction: column;
-        gap: 10px;
+        align-items: flex-start; /* Mobilon balra igazított cím és tagek */
+        gap: 8px;
     }
 
-    .myCard {
-        max-width: 100%;
+    .tags {
+        justify-content: flex-start; /* Mobilon a tagek is balról induljanak */
+        width: 100%;
+    }
+
+    .sub-container > img {
+        width: 100%;        /* Mobilon a kép legyen olyan széles, amennyire lehet */
+        max-width: 450px;   /* De mobilon se legyen óriási */
     }
 
     .myHeader {
         padding-top: 30px;
+        font-size: 2rem;
     }
 }
 </style>

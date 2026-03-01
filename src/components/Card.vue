@@ -73,9 +73,12 @@ import Card from 'primevue/card';
 }
 
 .myCard {
-  transition: .4s;
-  max-width: 700px;
-  width: 100%;
+    transition: .4s;
+    max-width: 700px;
+    width: 100%;
+    display: flex;
+    flex-direction: column; 
+    flex-grow: 1;
 }
 
 .myCard:hover {
