@@ -9,7 +9,7 @@
         <Card class="myCard">
              <template #title>
                 <div class="title-container">
-                    <p>Room Furniture Arrangement App</p>
+                    <p>Room Planner (Web Application)</p>
                     <div class="tags">
                         <Tag class="tag csharp" severity="success" value="C#" />
                         <Tag class="tag javascript" severity="danger" value="JavaScript"></Tag>
@@ -32,17 +32,19 @@
         <Card class="myCard">
              <template #title>
                 <div class="title-container">
-                    <p>Food Order API</p>
+                    <p>Food Order (API)</p>
                     <div class="tags">
                         <Tag class="tag csharp" severity="success" value="C#" />
                         <Tag class="tag" severity="success" value="SignalR" />
                         <Tag class="tag" severity="success" value="Hangfire" />
+                        <Tag class="tag" severity="success" value="JWT" />
+                        <Tag class="tag" severity="success" value="EFCore" />
                     </div>
                 </div>
             </template>
             <template #content>
                 <div class="sub-container">
-                    <img src="../assets/furniture.png" alt="">
+                    <img src="../assets/foodorder.png" alt="">
                 </div>
                 <p class="description">
                     A layered .NET 8.0 food ordering API built with clean architecture principles. 

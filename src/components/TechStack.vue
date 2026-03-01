@@ -70,7 +70,7 @@ import Tag from 'primevue/tag';
 
 ::v-deep(.postman-bruno) {
     background-color: #FD6C36;
-    color: #fec4af;
+    color: white;
     border: none;
 }
 
