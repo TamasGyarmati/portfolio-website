@@ -70,10 +70,10 @@
     flex-direction: row;
     align-items: stretch;
     flex-wrap: wrap;
-    justify-content: center; /* Középre zárja a kártyákat */
-    gap: 40px;               /* 100px túl sok volt, a 40px barátibb */
-    margin: 0 auto;          /* Középre rendezi az egész konténert */
-    max-width: 1400px;       /* Ne nyúljon el végtelenül nagy monitoron */
+    justify-content: center;
+    gap: 40px;
+    margin: 0 auto;
+    max-width: 1400px;
     padding: 0 20px;
 }
 .myCard {
@@ -152,31 +152,31 @@
 @media (max-width: 768px) {
     .container {
         flex-direction: column;
-        align-items: center; /* Kártyák középre igazítása mobilon */
+        align-items: center;
         gap: 30px;
         margin-left: 15px;
         margin-right: 15px;
     }
 
     .myCard {
-        max-width: 100%;    /* Mobilon töltse ki a szélességet */
+        max-width: 100%;
         width: 100%;
     }
 
     .title-container {
         flex-direction: column;
-        align-items: flex-start; /* Mobilon balra igazított cím és tagek */
+        align-items: flex-start;
         gap: 8px;
     }
 
     .tags {
-        justify-content: flex-start; /* Mobilon a tagek is balról induljanak */
+        justify-content: flex-start;
         width: 100%;
     }
 
     .sub-container > img {
-        width: 100%;        /* Mobilon a kép legyen olyan széles, amennyire lehet */
-        max-width: 450px;   /* De mobilon se legyen óriási */
+        width: 100%;
+        max-width: 450px;
     }
 
     .myHeader {

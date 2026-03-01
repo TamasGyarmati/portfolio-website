@@ -94,14 +94,14 @@ import Tag from 'primevue/tag';
 
 .sub-container {
     display: flex;
-    flex-direction: column; /* sorok egymás alatt */
-    gap: 15px; /* gap a sorok között */
+    flex-direction: column;
+    gap: 15px;
 }
 
 .stack-row {
     display: flex;
-    justify-content: space-between; /* bal-jobb elrendezés */
-    align-items: center; /* függőleges középre */
+    justify-content: space-between;
+    align-items: center;
 }
 
 .programming-languages,
@@ -109,7 +109,7 @@ import Tag from 'primevue/tag';
 .database,
 .tools-technologies {
     display: flex;
-    gap: 10px; /* gap a tag-ek között */
+    gap: 10px;
 }
 
 .myCard {
