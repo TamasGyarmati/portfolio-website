@@ -110,9 +110,9 @@
     @media (max-width: 768px) {
     .subclass {
         flex-direction: column;
-        gap: 15px;
+        gap: 0;
         align-items: center;
-        font-size: 12px;
+        font-size: 10px;
     }
 
     .myHeader {
