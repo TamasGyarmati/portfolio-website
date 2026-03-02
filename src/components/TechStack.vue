@@ -94,9 +94,8 @@ import Tag from 'primevue/tag';
 }
 
 .container {
-    margin: 0 auto;
-    /*padding-top: 90px;*/
-    max-width: 850px;
+    margin: 0 auto; 
+    max-width: 60rem;
 }
 
 .sub-container {
