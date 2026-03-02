@@ -31,6 +31,7 @@
         padding-top: 15px;        
         margin-bottom: 10px;
         padding-bottom: 0;
+        letter-spacing: 10px;
     }
 
     .container {
@@ -54,8 +55,7 @@
 
     .contactLink {
         text-decoration: none;
-        display: inline-flex;
-        font-family: 'Inter', sans-serif; 
+        display: inline-flex;        
         color: burlywood;
         transition: transform 0.5s, color 0.5s ease;        
     }
@@ -82,6 +82,7 @@
     .myHeaderType {
         margin-top: 0;
         padding-top: 0;
+        letter-spacing: 5px;
     }
 
     /*
