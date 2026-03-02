@@ -76,7 +76,7 @@
 .myHeader {
     text-align: center;
     color: burlywood;
-    padding-top: 60px;
+    margin-top: 10rem;
 }
 .sub-sub-container {
     display: flex;
@@ -103,10 +103,10 @@
     align-items: stretch;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 40px;
-    margin: 0 auto;
-    max-width: 1400px;
+    gap: 100px;
+    margin: 0 auto;    
     padding: 0 20px;
+    margin-bottom: 10rem; /* DELETE IF YOU ADD NEW COMPONENT BELOW */
 }
 .myCard {
     transition: .4s;

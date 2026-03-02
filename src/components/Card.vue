@@ -40,8 +40,7 @@ import Card from 'primevue/card';
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 60px;
-    padding: 0 1.5rem;
+    margin-top: 10rem;      
 }
 
 .spans {

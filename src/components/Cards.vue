@@ -45,7 +45,8 @@ const cards = [
 .container {
   display: flex;
   flex-direction: row;
-  align-items: stretch;
+  justify-content: center;
+  gap: 100px;
 }
 
 @media (max-width: 768px) {
