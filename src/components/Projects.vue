@@ -23,12 +23,17 @@
                 <div class="sub-container">
                     <img src="../assets/furniture.png" alt="">
                 </div>
-                <p class="description">
-                    This application arranges given furniture items within a room so that none of them overlap. 
-                    The output is presented in a tabular format where each table cell represents 10 cm. 
-                    For example, if a bed measures 160 cm by 200 cm and is located in a corner, it occupies 16 cells in width and 20 cells in length. 
-                    These cells are merged, colored with a random color, and labeled with the furniture name, such as "Bed".
-                </p>
+                <div class="sub-sub-container">
+                    <p class="description">
+                        This application arranges given furniture items within a room so that none of them overlap. 
+                        The output is presented in a tabular format where each table cell represents 10 cm. 
+                        For example, if a bed measures 160 cm by 200 cm and is located in a corner, it occupies 16 cells in width and 20 cells in length. 
+                        These cells are merged, colored with a random color, and labeled with the furniture name, such as "Bed".
+                    </p>
+                    <Tag class="tag button-tag" severity="success">
+                        <a href="https://github.com/TamasGyarmati/furniture-arrangement-webapp" target="_blank">View Source on GitHub</a>
+                    </Tag>
+                </div>
             </template>
         </Card>
         <Card class="myCard">
@@ -49,14 +54,19 @@
                 <div class="sub-container">
                     <img src="../assets/foodorder.png" alt="">
                 </div>
-                <p class="description">
-                    A layered .NET 8.0 food ordering API built with clean architecture principles. 
-                    The system supports JWT-based authentication, role-based authorization, 
-                    real-time order notifications via SignalR, and delayed background processing 
-                    with Hangfire. It follows a structured separation of concerns using Entity 
-                    Framework Core, AutoMapper, and the Repository pattern to ensure scalability, 
-                    maintainability, and clean code practices.
-                </p>
+                <div class="sub-sub-container">
+                    <p class="description">
+                        A layered .NET 8.0 food ordering API built with clean architecture principles. 
+                        The system supports JWT-based authentication, role-based authorization, 
+                        real-time order notifications via SignalR, and delayed background processing 
+                        with Hangfire. It follows a structured separation of concerns using Entity 
+                        Framework Core, AutoMapper, and the Repository pattern to ensure scalability, 
+                        maintainability, and clean code practices.
+                    </p>
+                    <Tag class="tag button-tag" severity="success">
+                        <a href="https://github.com/TamasGyarmati/food-order-api" target="_blank">View Source on GitHub</a>
+                    </Tag>
+                </div>
             </template>
         </Card>
     </div>
@@ -67,6 +77,25 @@
     text-align: center;
     color: burlywood;
     padding-top: 60px;
+}
+.sub-sub-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+::v-deep(.button-tag) {
+    padding: 15px 15px;
+    transition: transform 0.2s ease;
+}
+::v-deep(.button-tag>a) {
+    text-decoration: none;
+    color: #86EFAC;
+}
+::v-deep(.button-tag:has(a:active)) {
+    transform: scale(0.90);
+}
+::v-deep(.button-tag):hover {
+    border-radius: 25px;
 }
 .container {
     display: flex;
@@ -98,6 +127,7 @@
     transition: .4s;
     max-height: 20px;
     margin: 0;
+    align-self: flex-start;
 }
 .tags {
     display: flex;
