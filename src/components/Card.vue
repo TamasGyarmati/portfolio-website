@@ -40,7 +40,8 @@ import Card from 'primevue/card';
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 10rem;      
+    margin-top: 10rem;
+    padding: 0 20px;    
 }
 
 .spans {
@@ -74,7 +75,6 @@ import Card from 'primevue/card';
 .myCard {
     transition: .4s;
     max-width: 700px;
-    width: 100%;
     display: flex;
     flex-direction: column; 
     flex-grow: 1;
