@@ -218,7 +218,7 @@
     }
 
     .myHeader {
-        padding-top: 30px;
+        margin-top: 4rem;
         font-size: 2rem;
     }
 }
