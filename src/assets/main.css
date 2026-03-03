@@ -8,3 +8,17 @@ body {
   background: white;
   color: black;
 }
+
+/* Chrome, Safari, Opera */
+html::-webkit-scrollbar {
+  display: none;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* IE, Edge, Firefox */
+html, body {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
