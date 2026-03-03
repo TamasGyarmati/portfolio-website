@@ -163,7 +163,7 @@ import Tag from 'primevue/tag';
     }
 
     .myCard {
-        max-width: 95%;
+        max-width: 90%;
         margin: 0 auto;
     }
 

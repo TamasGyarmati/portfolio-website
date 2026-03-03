@@ -85,9 +85,7 @@ import Card from 'primevue/card';
 }
 
 @media (max-width: 768px) {
-  .main {
-    margin-left: 1rem;
-    margin-right: 1rem;
+  .main {    
     margin-top: 30px;
   }
 
