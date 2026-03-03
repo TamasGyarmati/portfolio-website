@@ -192,8 +192,6 @@
         flex-direction: column;
         align-items: center;
         gap: 30px;
-        margin-left: 15px;
-        margin-right: 15px;
     }
 
     .myCard {
@@ -218,7 +216,7 @@
     }
 
     .myHeader {
-        margin-top: 4rem;
+        margin-top: 3rem;
         font-size: 2rem;
     }
 }
