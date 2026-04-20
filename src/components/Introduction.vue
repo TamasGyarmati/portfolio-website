@@ -24,7 +24,7 @@
     display: flex;
     margin: 0 auto;
     text-align: justify;
-    max-width: 600px;
+    max-width: 610px;
     font-size: 20px;
 }
 @media (max-width: 768px) {
