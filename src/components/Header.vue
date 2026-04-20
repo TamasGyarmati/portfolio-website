@@ -71,7 +71,7 @@
     }
 
     .contactLink:hover .contactText {
-        color: lightskyblue;
+        color: white;
         transform: translateY(-8px);
     }
 
