@@ -9,7 +9,7 @@
         <Card class="myCard">
              <template #title>
                 <div class="title-container">
-                    <p>GYM Tracker</p>
+                    <p>GYM Tracker (Desktop Application)</p>
                     <div class="tags">
                         <Tag class="tag python" value="Python" />
                         <Tag class="tag kivy" value="KivyUI" />
