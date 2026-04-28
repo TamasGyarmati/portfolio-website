@@ -12,7 +12,7 @@
             <h2>
                 <a href="https://github.com/TamasGyarmati" class="contactLink" target="_blank" rel="noopener noreferrer">
                     <i class="iconPad pi pi-github"></i> 
-                    <span class="contactText">@TamasGyarmati</span>
+                    <span class="contactText">TamasGyarmati</span>
                 </a>
             </h2>
             <h2>
