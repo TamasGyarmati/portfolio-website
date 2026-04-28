@@ -14,7 +14,7 @@
             how professional workflows
             really work, and broaden my
             tech stack in the future with
-            other languages like Java.
+            other technologies.
         </p>
     </div>
 </template>
