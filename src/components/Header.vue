@@ -1,7 +1,7 @@
 <template>
     <div class="container">
         <h1 class="myHeader typewriter">Tamas Gyarmati</h1>
-        <h1 class="myHeaderType">Software Developer</h1>
+        <h1 class="myHeaderType">Software Engineering student</h1>
         <div class="subclass">
             <h2>
                 <a :href="'mailto:' + 'tamasgy56' + '@' + 'gmail.com'" class="contactLink" target="_blank" rel="noopener noreferrer">
