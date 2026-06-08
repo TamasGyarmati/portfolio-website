@@ -4,17 +4,12 @@
   import Introduction from './components/Introduction.vue'
   import TechStack from './components/TechStack.vue'
   import Projects from './components/Projects.vue';
-
-  window.addEventListener('mousemove', (e) => {
-    document.documentElement.style.setProperty('--mouse-x', `${e.clientX}px`)
-    document.documentElement.style.setProperty('--mouse-y', `${e.clientY}px`)
-  })
-
 </script>
 
 <template>
-  <div class="background"></div>
-  <div class="background-hover"></div>
+  <video class="background" autoplay muted loop playsinline>
+    <source src="@/assets/background.mp4" type="video/mp4">
+  </video>  
   <div class="content">
     <Header />
     <Introduction />
@@ -26,39 +21,17 @@
 </template>
 
 <style scoped>
-.background,
-.background-hover {
+.background {
+  z-index: -2;
+  opacity: 0.5;
   position: fixed;
   inset: 0;
-  background-image: url('@/assets/background.jpg');
-  background-size: cover;
-  background-position: center;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  pointer-events: none;
 }
 
-.background {
-  filter: blur(2px);
-  z-index: -2;
-}
-
-.background-hover {
-  filter: blur(1px);
-  background-size: 120%;
-  z-index: -1;
-
-  opacity: 0;
-
-  mask-image: radial-gradient(
-    circle 250px at var(--mouse-x, 50vw) var(--mouse-y, 50vh),
-    rgba(0,0,0,1) 0%,
-    rgba(0,0,0,0) 100%
-  );
-
-  transition: opacity 0.2s ease;
-}
-
-body:hover .background-hover {
-  opacity: 1;
-}
 :deep(.p-scrolltop) {
     background-color: black !important;
     border: none;
