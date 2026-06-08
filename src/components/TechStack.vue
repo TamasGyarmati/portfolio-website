@@ -121,6 +121,7 @@ import Tag from 'primevue/tag';
 .myCard {
   transition: .4s;
   flex: 1;
+  background: rgba(0, 0, 0, 0.5);
 }
 
 .myCard:hover {
@@ -139,7 +140,7 @@ import Tag from 'primevue/tag';
     margin-left: 5px;
     margin-bottom: 0;
     padding-bottom: 20px;
-    color: burlywood;
+    color: #91a081;
     text-align: center;
 }
 

@@ -27,8 +27,8 @@
 
 <style scoped>
     .myHeader {
-        font-size: 50px;
-        padding-top: 15px;        
+        font-size: 80px;
+        margin-top: 5px;  
         margin-bottom: 10px;
         padding-bottom: 0;
         letter-spacing: 10px;
@@ -56,12 +56,12 @@
     .contactLink {
         text-decoration: none;
         display: inline-flex;        
-        color: burlywood;
+        color: #91a081;
         transition: transform 0.5s, color 0.5s ease;        
     }
 
     .contactText {
-        color: burlywood;
+        color: #91a081;
         transition: color .5s ease;
     }
 

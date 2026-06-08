@@ -33,7 +33,7 @@ import Card from 'primevue/card';
     margin-left: 5px;
     margin-bottom: 0;
     padding-bottom: 20px;
-    color: burlywood;
+    color: #91a081;
 }
 
 .main {
@@ -78,6 +78,7 @@ import Card from 'primevue/card';
     display: flex;
     flex-direction: column; 
     flex-grow: 1;
+    background: rgba(0, 0, 0, 0.5);
 }
 
 .myCard:hover {

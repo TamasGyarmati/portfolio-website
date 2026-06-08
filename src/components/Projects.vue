@@ -77,7 +77,7 @@
                     <p>Room Planner (Web Application)</p>
                     <div class="tags">
                         <Tag class="tag csharp" value="C#" />
-                        <!--<Tag class="tag aspnet" value="ASP.NET Core" />-->
+                        <Tag class="tag aspnet" value="ASP.NET Core" />
                         <Tag class="tag html" value="HTML" />
                         <Tag class="tag css" value="CSS" />
                         <Tag class="tag javascript" value="JavaScript" />
@@ -136,7 +136,7 @@
 <style scoped>
 .myHeader {
     text-align: center;
-    color: burlywood;
+    color: #91a081;
     margin-top: 10rem;
 }
 ::v-deep(.p-card-content) {
@@ -194,6 +194,7 @@
     transition: .4s;
     max-width: 700px;
     flex: 1;
+    background: rgba(0, 0, 0, 0.5);
 }
 .myCard:hover {
   transform: translateY(-10px);
@@ -255,13 +256,13 @@
     border: none;
 }
 ::v-deep(.mediapipe) {
-    background-color: #0F9D58;
+    background-color: #3198A6;
     color: #FFFFFF;
     border: none;
 }
 ::v-deep(.opencv) {
-    background-color: #5C3EE8;
-    color: #FFFFFF;
+    background-color: #27272A;
+    color: #D4D4D8;
     border: none;
 }
 ::v-deep(.kivy) {
