@@ -65,10 +65,10 @@ body:hover .background-hover {
     transition: opacity 0.3s, background-color 0.3s, transform 0.3s !important;
 }
 :deep(.p-scrolltop .p-scrolltop-icon) {
-    color: white !important;
+    color: #91a081 !important;
 }
 :deep(.p-scrolltop:hover) {
-    background-color: white !important;
+    background-color: #91a081 !important;
     border: none !important;
 }
 :deep(.p-scrolltop:hover .p-scrolltop-icon) {
