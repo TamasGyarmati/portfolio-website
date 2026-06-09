@@ -194,7 +194,7 @@
     transition: .4s;
     max-width: 700px;
     flex: 1;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.3);
 }
 .myCard:hover {
   transform: translateY(-10px);

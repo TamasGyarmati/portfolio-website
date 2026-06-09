@@ -78,7 +78,7 @@ import Card from 'primevue/card';
     display: flex;
     flex-direction: column; 
     flex-grow: 1;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.3);
 }
 
 .myCard:hover {

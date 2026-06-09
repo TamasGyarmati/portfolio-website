@@ -121,7 +121,7 @@ import Tag from 'primevue/tag';
 .myCard {
   transition: .4s;
   flex: 1;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.3);
 }
 
 .myCard:hover {
