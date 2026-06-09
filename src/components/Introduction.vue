@@ -22,15 +22,15 @@
 <style scoped>
 .container {
     display: flex;
-    margin: 0 auto;
+    margin: 0;
     text-align: justify;
-    max-width: 610px;
-    font-size: 20px;
+    max-width: 665px;
+    width: 100%;
+    font-size: clamp(16px, 2.5vw, 20px);
 }
 @media (max-width: 768px) {
     .container {
         max-width: 90%;
-        font-size: 16px;
         padding: 0 10px;
     }
 }

@@ -51,6 +51,8 @@ import Tag from 'primevue/tag';
 </template>
 
 <style scoped>
+
+
 ::v-deep(.javascript) {
     background-color: #F8E017;
     color: black; 
@@ -94,8 +96,9 @@ import Tag from 'primevue/tag';
 }
 
 .container {
-    margin: 0 auto; 
+    margin: 0 auto;
     max-width: 60rem;
+    width: 100%;
 }
 
 .sub-container {

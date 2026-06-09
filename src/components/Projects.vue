@@ -4,6 +4,7 @@
 </script>
 
 <template>
+    <section class="projects">
     <h1 class="myHeader">Projects</h1>
     <div class="container">
         <Card class="myCard">
@@ -131,13 +132,22 @@
             </template>
         </Card>
     </div>
+    </section>
 </template>
 
 <style scoped>
+.projects {
+    width: 100%;
+    max-width: 1500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: clamp(2rem, 5vw, 4rem);
+}
 .myHeader {
     text-align: center;
     color: #91a081;
-    margin-top: 10rem;
+    margin: 0;
 }
 ::v-deep(.p-card-content) {
     display: flex;
@@ -178,22 +188,20 @@
     transform: scale(0.90);
 }
 .container {
-    display: flex;
-    flex-direction: row;
-    align-items: stretch;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 100px;
-    margin: 0 auto;    
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: clamp(1.5rem, 4vw, 4rem);
+    width: 100%;
+    margin: 0 auto;
     padding: 0 20px;
-    margin-bottom: 5rem; /* DELETE IF YOU ADD NEW COMPONENT BELOW */
+    box-sizing: border-box;
 }
 .myCard {
     display: flex;
     flex-direction: column;
     transition: .4s;
-    max-width: 700px;
-    flex: 1;
+    width: 100%;
+    min-width: 0;
     background: rgba(0, 0, 0, 0.3);
 }
 .myCard:hover {
@@ -222,7 +230,8 @@
     transform: scale(1.1);
 }
 .sub-container>img {
-    width: 550px;
+    width: 100%;
+    max-width: 550px;
     margin-top: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
@@ -295,16 +304,16 @@
     color: white;
     border: none;
 }
+@media (max-width: 1100px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+}
+
 @media (max-width: 768px) {
     .container {
-        flex-direction: column;
-        align-items: center;
+        padding: 0 10px;
         gap: 30px;
-    }
-
-    .myCard {
-        max-width: 100%;
-        width: 100%;
     }
 
     .title-container {
@@ -321,11 +330,6 @@
     .sub-container > img {
         width: 100%;
         max-width: 450px;
-    }
-
-    .myHeader {
-        margin-top: 3rem;
-        font-size: 2rem;
     }
 }
 </style>

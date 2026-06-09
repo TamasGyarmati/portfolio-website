@@ -1,7 +1,43 @@
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100..800&display=swap');
 
+:root {
+  --section-padding-x: clamp(1rem, 4vw, 2rem);
+  --section-padding-y: clamp(1.5rem, 5vh, 3rem);
+  --section-gap: clamp(1.5rem, 6vh, 3.5rem);
+  --hero-block-gap: clamp(1.5rem, 5vh, 3rem);
+}
+
 body {
   font-family: "JetBrains Mono", monospace;
+  margin: 0;
+}
+
+.page-section {
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: var(--section-padding-y) var(--section-padding-x);
+  gap: var(--section-gap);
+  box-sizing: border-box;
+}
+
+.page-section--tall {
+  justify-content: flex-start;
+}
+
+.page-section--hero {
+  gap: 0;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--hero-block-gap);
+  width: 100%;
 }
 
 ::selection {
@@ -21,4 +57,16 @@ body::-webkit-scrollbar {
 html, body {
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
+}
+
+.reveal {
+  opacity: 0;
+  transform: translate3d(-60px, 0, 0);
+  transition: opacity 1.0s ease, transform 1.0s ease;
+  will-change: transform, opacity;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
 }

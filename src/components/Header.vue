@@ -1,44 +1,50 @@
 <template>
-    <div class="container">
+    <div class="title-group">
         <h1 class="myHeader typewriter">Tamas Gyarmati</h1>
         <h1 class="myHeaderType">Software Engineering student</h1>
-        <div class="subclass">
-            <h2>
-                <a :href="'mailto:' + 'tamasgy56' + '@' + 'gmail.com'" class="contactLink" target="_blank" rel="noopener noreferrer">
-                    <i class="iconPad pi pi-envelope"></i>
-                    <span class="contactText">tamasgy56 [at] gmail (dot) com</span>
-                </a>
-            </h2>
-            <h2>
-                <a href="https://github.com/TamasGyarmati" class="contactLink" target="_blank" rel="noopener noreferrer">
-                    <i class="iconPad pi pi-github"></i> 
-                    <span class="contactText">TamasGyarmati</span>
-                </a>
-            </h2>
-            <h2>
-                <a href="https://www.linkedin.com/in/tamasgyarmati" class="contactLink" target="_blank" rel="noopener noreferrer">
-                    <i class="iconPad pi pi-linkedin"></i>
-                    <span class="contactText">tamasgyarmati</span>
-                </a>
-            </h2>
-        </div>
+    </div>
+    <div class="subclass">
+        <h2>
+            <a :href="'mailto:' + 'tamasgy56' + '@' + 'gmail.com'" class="contactLink" target="_blank" rel="noopener noreferrer">
+                <i class="iconPad pi pi-envelope"></i>
+                <span class="contactText">tamasgy56 [at] gmail (dot) com</span>
+            </a>
+        </h2>
+        <h2>
+            <a href="https://github.com/TamasGyarmati" class="contactLink" target="_blank" rel="noopener noreferrer">
+                <i class="iconPad pi pi-github"></i> 
+                <span class="contactText">TamasGyarmati</span>
+            </a>
+        </h2>
+        <h2>
+            <a href="https://www.linkedin.com/in/tamasgyarmati" class="contactLink" target="_blank" rel="noopener noreferrer">
+                <i class="iconPad pi pi-linkedin"></i>
+                <span class="contactText">tamasgyarmati</span>
+            </a>
+        </h2>
     </div>
 </template>
 
 <style scoped>
+    .title-group {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .title-group h1 {
+        margin: 0;
+    }
+
     .myHeader {
-        font-size: 80px;
-        margin-top: 5px;  
-        margin-bottom: 10px;
-        padding-bottom: 0;
+        font-size: clamp(36px, 8vw, 80px);
         letter-spacing: 10px;
     }
 
-    .container {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        align-items: center;
+    .myHeaderType {
+        font-size: clamp(18px, 3vw, 32px);
+        letter-spacing: 5px;
     }
 
     .subclass {
@@ -46,6 +52,10 @@
         flex-direction: row;
         gap: 40px;
         font-size: 10px;
+    }
+
+    .subclass h2 {
+        margin: 0;
     }
 
     .iconPad {
@@ -79,12 +89,6 @@
         transform: translateY(-8px);
     }
 
-    .myHeaderType {
-        margin-top: 0;
-        padding-top: 0;
-        letter-spacing: 5px;
-    }
-
     /*
     .typewriter {
         overflow: hidden;
@@ -109,19 +113,11 @@
     }*/
 
     @media (max-width: 768px) {
-    .subclass {
-        flex-direction: column;
-        gap: 0;
-        align-items: center;
-        font-size: 10px;
+        .subclass {
+            flex-direction: column;
+            align-items: center;
+            gap: 0.75rem;
+            font-size: 10px;
+        }
     }
-
-    .myHeader {
-        font-size: 36px;
-    }
-
-    .myHeaderType {
-        font-size: 24px;
-    }
-}
 </style>

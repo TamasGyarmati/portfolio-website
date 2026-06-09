@@ -40,7 +40,6 @@ import Card from 'primevue/card';
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 10rem;
     padding: 0 20px;    
 }
 
@@ -86,10 +85,6 @@ import Card from 'primevue/card';
 }
 
 @media (max-width: 768px) {
-  .main {    
-    margin-top: 30px;
-  }
-
   .main > h1 {
     font-size: 28px;
     text-align: center;

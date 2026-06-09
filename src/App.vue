@@ -4,6 +4,7 @@
   import Introduction from './components/Introduction.vue'
   import TechStack from './components/TechStack.vue'
   import Projects from './components/Projects.vue';
+  import ScrollProgressBar from '@/components/ScrollBar.vue';
 </script>
 
 <template>
@@ -11,11 +12,22 @@
     <source src="@/assets/background.mp4" type="video/mp4">
   </video>  
   <div class="content">
-    <Header />
-    <Introduction />
-    <TechStack />
-    <Cards />
-    <Projects />
+    <section class="page-section page-section--hero" v-scroll-animate>
+      <div class="hero-content">
+        <Header />
+        <Introduction />
+      </div>
+    </section>
+    <section class="page-section" v-scroll-animate>
+      <TechStack />
+    </section>
+    <section class="page-section" v-scroll-animate>
+      <Cards />
+    </section>
+    <section class="page-section page-section--tall" v-scroll-animate>
+      <Projects />
+    </section>
+    <ScrollProgressBar />
     <ScrollTop threshold="200" behavior="smooth" />
   </div>
 </template>
