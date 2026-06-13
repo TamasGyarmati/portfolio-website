@@ -82,6 +82,7 @@
                         <Tag class="tag html" value="HTML" />
                         <Tag class="tag css" value="CSS" />
                         <Tag class="tag javascript" value="JavaScript" />
+                        <Tag class="tag docker" value="Docker" />
                     </div>
                 </div>
             </template>
@@ -277,6 +278,11 @@
 ::v-deep(.kivy) {
     background-color: #2D2D2D;
     color: #8BC34A;
+    border: none;
+}
+::v-deep(.docker) {
+    background-color: #1C63ED;
+    color: white;
     border: none;
 }
 ::v-deep(.sqlite) {
