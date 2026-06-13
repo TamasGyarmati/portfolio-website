@@ -1,4 +1,5 @@
 <script setup>
+  import Navbar from './components/Navbar.vue'
   import Header from './components/Header.vue'
   import Cards from './components/Cards.vue'
   import Introduction from './components/Introduction.vue'
@@ -10,21 +11,22 @@
 <template>
   <video class="background" autoplay muted loop playsinline>
     <source src="@/assets/background.mp4" type="video/mp4">
-  </video>  
+  </video>
+  <Navbar />
   <div class="content">
-    <section class="page-section page-section--hero" v-scroll-animate>
+    <section id="introduction" class="page-section page-section--hero" v-scroll-animate>
       <div class="hero-content">
         <Header />
         <Introduction />
       </div>
     </section>
-    <section class="page-section" v-scroll-animate>
+    <section id="stack" class="page-section" v-scroll-animate>
       <TechStack />
     </section>
-    <section class="page-section" v-scroll-animate>
+    <section id="experience" class="page-section" v-scroll-animate>
       <Cards />
     </section>
-    <section class="page-section page-section--tall" v-scroll-animate>
+    <section id="projects" class="page-section page-section--tall" v-scroll-animate>
       <Projects />
     </section>
     <ScrollProgressBar />

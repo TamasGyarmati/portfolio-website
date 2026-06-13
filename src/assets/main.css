@@ -7,6 +7,11 @@
   --hero-block-gap: clamp(1.5rem, 5vh, 3rem);
 }
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 3.25rem;
+}
+
 body {
   font-family: "JetBrains Mono", monospace;
   margin: 0;
