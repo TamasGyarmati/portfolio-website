@@ -38,6 +38,7 @@ import Tag from 'primevue/tag';
                             <span>Tools & Technologies</span>
                             <div class="tools-technologies">
                                 <Tag class="tag" severity="info" value="Microsoft Azure" />
+                                <Tag class="tag docker" value="Docker" />
                                 <Tag class="tag" severity="secondary" value="Git, GitHub" />
                                 <Tag class="tag postman-bruno" value="Postman, Bruno" />
                                 <Tag class="tag agile-scrum" value="Agile / Scrum methodologies" />
@@ -95,9 +96,15 @@ import Tag from 'primevue/tag';
     border: none;
 }
 
+::v-deep(.docker) {
+    background-color: #1C63ED;
+    color: white;
+    border: none;
+}
+
 .container {
     margin: 0 auto;
-    max-width: 60rem;
+    max-width: 70rem;
     width: 100%;
 }
 
