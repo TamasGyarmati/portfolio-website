@@ -15,6 +15,7 @@ import Tag from 'primevue/tag';
                             <div class="programming-languages">
                                 <Tag class="tag csharp" value="C#" />
                                 <Tag class="tag javascript" value="JavaScript" />
+                                <Tag class="tag python" value="Python" />
                             </div>
                         </div>
                         <div class="stack-row">
@@ -87,6 +88,12 @@ import Tag from 'primevue/tag';
 ::v-deep(.css) {
     background-color: #2581FF;
     color: white;
+    border: none;
+}
+
+::v-deep(.python) {
+    background-color: #3776AB;
+    color: #FFD43B;
     border: none;
 }
 
