@@ -38,14 +38,41 @@
             </template>
         </Card>
         <Card class="myCard">
+            <template #title>
+                <div class="title-container">
+                    <p>Social Media Platform (API)</p>
+                    <div class="tags">
+                        <Tag class="tag csharp" value="C#" />                    
+                        <Tag class="tag" severity="secondary" value="Identity" />
+                        <Tag class="tag" severity="secondary" value="EFCore" />
+                        <Tag class="tag" severity="secondary" value="ImageSharp" />
+                        <Tag class="tag" severity="secondary" value="Mailpit" />
+                    </div>
+                </div>
+            </template>
+            <template #content>
+                <div class="sub-container">
+                    <img src="../assets/socialmedia.png" alt="">
+                </div>
+                <div class="sub-sub-container">
+                    <p class="description">
+                        A layered ASP.NET Core Web API built with clean architecture for a social media platform. Features JWT authentication via ASP.NET Core Identity, role-based access, and token-based email confirmation flows. It supports full user management, follows, posts, nested comments, and likes, alongside ImageSharp for media processing and Mailpit for email testing. All async workflows enforce cancellation tokens for optimal performance, laying the backend foundation for an upcoming full-stack web application.
+                    </p>
+                    <Tag class="tag button-tag" severity="success">
+                        <a href="https://github.com/TamasGyarmati/social-media-api" target="_blank">View Source on GitHub</a>
+                    </Tag>
+                </div>
+            </template>
+        </Card>
+        <Card class="myCard">
              <template #title>
                 <div class="title-container">
-                    <p>Food Order (API)</p>
+                    <p>Food Ordering (API)</p>
                     <div class="tags">
                         <Tag class="tag csharp" value="C#" />
                         <Tag class="tag" severity="secondary" value="SignalR" />
                         <Tag class="tag" severity="secondary" value="Hangfire" />
-                        <Tag class="tag" severity="secondary" value="JWT" />
+                        <Tag class="tag" severity="secondary" value="Identity" />
                         <Tag class="tag" severity="secondary" value="EFCore" />
                         <Tag class="tag" severity="secondary" value="AutoMapper" />
                     </div>
@@ -70,8 +97,6 @@
                 </div>
             </template>
         </Card>
-    </div>
-    <div class="container">
         <Card class="myCard">
              <template #title>
                 <div class="title-container">
@@ -190,13 +215,15 @@
 }
 .container {
     display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     gap: clamp(1.5rem, 4vw, 4rem);
     width: 100%;
     margin: 0 auto;
     padding: 0 20px;
     box-sizing: border-box;
+    justify-items: center;
 }
+
 .myCard {
     display: flex;
     flex-direction: column;
