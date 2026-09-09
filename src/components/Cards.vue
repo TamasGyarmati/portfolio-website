@@ -19,7 +19,7 @@ const cards = [
     title: "Bsc, Computer Science Engineering (2023 Sept - 2027 Jan [expected])",
     location: "Obuda University, Budapest",
     content: [
-      "Currently in the 6th semester, specializing in Software Design and Development",
+      "Currently in my last (7th) semester, specializing in Software Design and Development",
       "Developed a strong foundation in .NET, OOP, algorithms, and data structures",
       "Experienced in building clean, maintainable backend solutions using layered architectures and design patterns",
       "Proficient in unit and integration testing to ensure software quality and reliability"
