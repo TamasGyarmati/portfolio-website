@@ -1,5 +1,9 @@
 export default {
   mounted(el) {
+  if (window.innerWidth <= 768) {
+      return;
+    }
+
     el.classList.add('reveal');
 
     const observer = new IntersectionObserver(
