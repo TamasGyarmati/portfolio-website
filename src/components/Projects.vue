@@ -131,6 +131,32 @@
         <Card class="myCard">
              <template #title>
                 <div class="title-container">
+                    <p>Notion Automation (Script)</p>
+                    <div class="tags">
+                        <Tag class="tag python" value="Python" />
+                        <Tag class="tag yaml" value="YAML" />
+                        <Tag class="tag" severity="secondary" value="Notion API" />
+                        <Tag class="tag" severity="secondary" value="GitHub Actions" />
+                    </div>
+                </div>
+            </template>
+            <template #content>
+                <div class="sub-container">
+                    <img src="../assets/notion.jpeg" alt="">
+                </div>
+                <div class="sub-sub-container">
+                    <p class="description">
+                        A Python script that automates the management of recurring weekly tasks in Notion. Using GitHub Actions and a YAML workflow configuration, the script runs automatically at a scheduled time each week and updates the corresponding tasks through the Notion API. API credentials are securely stored as GitHub Actions secrets rather than being exposed in the source code.
+                    </p>
+                    <Tag class="tag button-tag" severity="success">
+                        <a href="https://github.com/TamasGyarmati/notion-todo-script" target="_blank">View Source on GitHub</a>
+                    </Tag>
+                </div>
+            </template>
+        </Card>
+        <Card class="myCard">
+             <template #title>
+                <div class="title-container">
                     <p>Shipment Manager (Console Application)</p>
                     <div class="tags">
                         <Tag class="tag csharp" value="C#" />                 
@@ -290,6 +316,11 @@
 ::v-deep(.python) {
     background-color: #3776AB;
     color: #FFD43B;
+    border: none;
+}
+::v-deep(.yaml) {
+    background-color: #D8D8D8;
+    color: #CC2022;
     border: none;
 }
 ::v-deep(.mediapipe) {
