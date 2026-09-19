@@ -89,7 +89,7 @@ function closeMenu() {
   font-size: clamp(0.75rem, 1.5vw, 0.875rem);
   letter-spacing: 0.04em;
   display: inline-block;
-  transition: opacity 0.2s ease, transform 0.4s ease;
+  transition: all 0.4s ease;
   white-space: nowrap;
 }
 
