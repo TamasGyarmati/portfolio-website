@@ -4,7 +4,7 @@
 <template>
     <div class="container">
         <p>
-            My goal is to take my backend
+            My goal is to take my software
             development skills to the next
             level while becoming more
             comfortable with frontend
