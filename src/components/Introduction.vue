@@ -4,17 +4,21 @@
 <template>
     <div class="container">
         <p>
-            My goal is to take my software
-            development skills to the next
-            level while becoming more
-            comfortable with frontend
-            technologies. I am eager to join a
-            supportive team where I can use
-            my .NET / C# knowledge, learn
-            how professional workflows
-            really work, and broaden my
-            tech stack in the future with
-            other technologies.
+            Software developer with
+            professional experience as a
+            Software Developer Intern at
+            Bosch, primarly working with
+            .NET/C#, automated testing, Git,
+            and Azure DevOps. Currently
+            expanding my frontend
+            knowledge with Angular and
+            TypeScript while continuing to
+            develop my backend and
+            software engineering skills.
+            Interested in building
+            maintainable software and
+            working in collaborative
+            development environments.
         </p>
     </div>
 </template>

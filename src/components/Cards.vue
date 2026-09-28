@@ -8,10 +8,10 @@ const cards = [
     location: "Robert Bosch Kft., Budapest",
     content: [
       "Refactored and optimized legacy code in active .NET projects to improve performance and maintainability",
-      "Implemented Unit and Integration tests using xUnit, following Test-Driven Development (TDD) principles",
+      "Implemented unit and integration tests using xUnit, following Test-Driven Development (TDD) practices",
       "Used Git for version control and Azure DevOps for agile task management",
-      "Utilized Bruno (similar to Postman), to develop automated testing scripts for API endpoints to validate workflows and inter-service dependencies",
-      "Collaborated closely with developers on API design and the implementation of shared featured",
+      "Developed automated E2E API tests using Bruno to validate API workflows and endpoints",
+      "Collaborated with developers on API design and the implementation of shared features",
     ]
   },
   {
@@ -19,8 +19,8 @@ const cards = [
     title: "Bsc, Computer Science Engineering (2023 Sept - 2027 Jan [expected])",
     location: "Obuda University, Budapest",
     content: [
-      "Currently in my last semester, specializing in Software Design and Development",
-      "Developed a strong foundation in .NET, OOP, Web Development, algorithms and data structures",
+      "Currently in my 7th semester, specializing in Software Design and Development",
+      "Developed applications using C#/.NET, object-oriented programming, databases, web technologies, algorithms and data structures",
       "Experienced in building clean, maintainable backend solutions using both vertical and horizontal architectures and design patterns",
       "Proficient in unit and integration testing to ensure software quality and reliability"
     ]

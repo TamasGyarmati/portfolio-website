@@ -15,34 +15,40 @@ import Tag from 'primevue/tag';
                             <div class="programming-languages">
                                 <Tag class="tag csharp" value="C#" />
                                 <Tag class="tag javascript" value="JavaScript" />
+                                <Tag class="tag typescript" value="TypeScript" />
                                 <Tag class="tag python" value="Python" />
                             </div>
                         </div>
                         <div class="stack-row">
-                            <span>Web Development</span>
+                            <span>Frameworks & Web</span>
                             <div class="web-development">
                                 <Tag class="tag aspnet" value="ASP.NET Core" />
-                                <Tag class="tag" severity="success" value="Vue.js" />
+                                <Tag class="tag angular" value="Angular" />
+                                <Tag class="tag vue" value="Vue.js" />
                                 <Tag class="tag html" value="HTML" />
                                 <Tag class="tag css" value="CSS" />
+                                <Tag class="tag bootstrap" value="Bootstrap" />
+                                <Tag class="tag sass" value="Sass" />
                             </div>
                         </div>
                         <div class="stack-row">
-                            <span>Database</span>
+                            <span>Database & ORM</span>
                             <div class="database">
-                                <Tag class="tag" severity="info" value="Microsoft SQL Server" />
-                                <Tag class="tag ef-core" value="Entity Framework (ORM)" />
-                                <Tag class="tag oracle-sql" value="Oracle SQL Developer" />
+                                <Tag class="tag sql" value="SQL" />
+                                <Tag class="tag mssql" value="Microsoft SQL Server" />
+                                <Tag class="tag oracle-sql" value="Oracle Database" />
+                                <Tag class="tag ef-core" value="Entity Framework Core" />
                             </div>
                         </div>
                         <div class="stack-row">
                             <span>Tools & Technologies</span>
                             <div class="tools-technologies">
-                                <Tag class="tag" severity="info" value="Microsoft Azure" />
+                                <Tag class="tag azure" value="Azure DevOps" />
                                 <Tag class="tag docker" value="Docker" />
-                                <Tag class="tag" severity="secondary" value="Git, GitHub" />
+                                <Tag class="tag" severity="secondary" value="Zsh, Bash" />                                
+                                <Tag class="tag git" value="Git, GitHub" />
                                 <Tag class="tag postman-bruno" value="Postman, Bruno" />
-                                <Tag class="tag agile-scrum" value="Agile / Scrum methodologies" />
+                                <Tag class="tag agile-scrum" value="Agile, Scrum" />
                             </div>
                         </div>
                     </div>
@@ -53,56 +59,91 @@ import Tag from 'primevue/tag';
 </template>
 
 <style scoped>
-
-
 ::v-deep(.javascript) {
     background-color: #F8E017;
     color: black; 
     border: none;
 }
-
+::v-deep(.typescript) {
+    background-color: #257ACC;
+    color: white; 
+    border: none;
+}
+::v-deep(.angular) {
+    background-color: #DD0330;
+    color: white; 
+    border: none;
+}
+::v-deep(.vue) {
+    background-color: #35495E;
+    color: #41B882; 
+    border: none;
+}
 ::v-deep(.aspnet), ::v-deep(.csharp), ::v-deep(.ef-core) {
     background-color: #5A2E90;
     color: white;
     border: none;
 }
-
 ::v-deep(.oracle-sql) {
-    background-color: #D12024;
+    background-color: #D12024;    
     color: white;
     border: none;
 }
-
+::v-deep(.mssql) {
+    background-color: #D10A15;
+    color: white;
+    border: none;
+}
+::v-deep(.sql) {
+    background-color: #0C3863;
+    color: white;
+    border: none;
+}
 ::v-deep(.postman-bruno) {
     background-color: #FD6C36;
     color: white;
     border: none;
 }
-
 ::v-deep(.html) {
     background-color: #F15B2A;
     color: white;
     border: none;
 }
-
 ::v-deep(.css) {
     background-color: #2581FF;
     color: white;
     border: none;
 }
-
+::v-deep(.bootstrap) {
+    background-color: #8512FB;
+    color: white;
+    border: none;
+}
+::v-deep(.sass) {
+    background-color: #CD6497;
+    color: white;
+    border: none;
+}
 ::v-deep(.python) {
     background-color: #3776AB;
     color: #FFD43B;
     border: none;
 }
-
 ::v-deep(.agile-scrum) {
     background-color: #2581FF;
     color: white;
     border: none;
 }
-
+::v-deep(.azure) {
+    background-color: #2375D1;
+    color: white;
+    border: none;
+}
+::v-deep(.git) {
+    background-color: #DE4C36;
+    color: white; /* #3D2D00 */
+    border: none;
+}
 ::v-deep(.docker) {
     background-color: #1C63ED;
     color: white;
