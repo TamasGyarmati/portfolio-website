@@ -8,7 +8,7 @@
             professional experience as a
             Software Developer Intern at
             Bosch, primarly working with
-            .NET/C#, automated testing, Git,
+            .NET/C#, Vue.js, automated testing
             and Azure DevOps. Currently
             expanding my frontend
             knowledge with Angular and
