@@ -85,10 +85,10 @@ import Tag from "primevue/tag";
     transition: 0.25s ease;
 }
 
-::v-deep(.neutral) {
-    background-color: rgba(255, 255, 255, 0.08);
-    color: #d4d4d8;
-    border: 1px solid rgba(255, 255, 255, 0.15);
+::v-deep(.bash) {
+    background-color: rgba(78, 170, 86, 0.1);
+    color: #72c47a;
+    border: 1px solid rgba(78, 170, 86, 0.25);
 }
 ::v-deep(.javascript) {
     background-color: rgba(248, 224, 23, 0.1);
