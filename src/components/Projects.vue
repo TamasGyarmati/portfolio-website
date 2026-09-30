@@ -1,189 +1,246 @@
 <script setup>
-    import Card from 'primevue/card'
-    import Tag from 'primevue/tag'
+import Card from "primevue/card";
+import Tag from "primevue/tag";
 </script>
 
 <template>
     <section class="projects">
-    <h1 class="myHeader">Projects</h1>
-    <div class="container">
-        <Card class="myCard">
-             <template #title>
-                <div class="title-container">
-                    <p>GYM Tracker (Desktop Application)</p>
-                    <div class="tags">
-                        <Tag class="tag python" value="Python" />
-                        <Tag class="tag kivy" value="KivyUI" />
-                        <Tag class="tag mediapipe" value="MediaPipe" />
-                        <Tag class="tag opencv" value="OpenCV" />
-                        <Tag class="tag sqlite" value="SQLite" />
+        <h1 class="myHeader">Projects</h1>
+        <div class="container">
+            <Card class="myCard">
+                <template #title>
+                    <div class="title-container">
+                        <p>GYM Tracker (Desktop Application)</p>
+                        <div class="tags">
+                            <Tag class="tag python" value="Python" />
+                            <Tag class="tag kivy" value="KivyUI" />
+                            <Tag class="tag mediapipe" value="MediaPipe" />
+                            <Tag class="tag opencv" value="OpenCV" />
+                            <Tag class="tag sqlite" value="SQLite" />
+                        </div>
                     </div>
-                </div>
-            </template>
-            <template #content>
-                <div class="sub-container">
-                    <img src="../assets/gym.png" alt="">
-                </div>
-                <div class="sub-sub-container">
-                    <p class="description">
-                        A modular Python-based gym tracking application built with clean architecture-inspired design. 
-                        It provides real-time exercise rep counting through MediaPipe and OpenCV, workout plan and set management with SQLite persistence, 
-                        plus smart automation features like countdown/rest timers, inactivity-based auto stop, 
-                        and live fatigue feedback for a seamless and refined fitness experience.
-                    </p>
-                    <Tag class="tag button-tag-closed" severity="secondary">
-                        <a href="#" @click.prevent>Closed Source</a>
-                    </Tag>
-                </div>
-            </template>
-        </Card>
-        <Card class="myCard">
-            <template #title>
-                <div class="title-container">
-                    <p>Social Media Platform (API)</p>
-                    <div class="tags">
-                        <Tag class="tag csharp" value="C#" />                    
-                        <Tag class="tag" severity="secondary" value="Identity" />
-                        <Tag class="tag" severity="secondary" value="EFCore" />
-                        <Tag class="tag" severity="secondary" value="ImageSharp" />
-                        <Tag class="tag" severity="secondary" value="Mailpit" />
+                </template>
+                <template #content>
+                    <div class="sub-container">
+                        <img src="../assets/gym.png" alt="" />
                     </div>
-                </div>
-            </template>
-            <template #content>
-                <div class="sub-container">
-                    <img src="../assets/socialmedia.png" alt="">
-                </div>
-                <div class="sub-sub-container">
-                    <p class="description">
-                        A layered ASP.NET Core Web API built with clean architecture for a social media platform. Features JWT authentication via ASP.NET Core Identity, role-based access, and token-based email confirmation flows. It supports full user management, follows, posts, nested comments, and likes, alongside ImageSharp for media processing and Mailpit for email testing. All async workflows enforce cancellation tokens for optimal performance, laying the backend foundation for an upcoming full-stack web application.
-                    </p>
-                    <Tag class="tag button-tag" severity="success">
-                        <a href="https://github.com/TamasGyarmati/social-media-api" target="_blank">View Source on GitHub</a>
-                    </Tag>
-                </div>
-            </template>
-        </Card>
-        <Card class="myCard">
-             <template #title>
-                <div class="title-container">
-                    <p>Food Ordering (API)</p>
-                    <div class="tags">
-                        <Tag class="tag csharp" value="C#" />
-                        <Tag class="tag" severity="secondary" value="SignalR" />
-                        <Tag class="tag" severity="secondary" value="Hangfire" />
-                        <Tag class="tag" severity="secondary" value="Identity" />
-                        <Tag class="tag" severity="secondary" value="EFCore" />
-                        <Tag class="tag" severity="secondary" value="AutoMapper" />
+                    <div class="sub-sub-container">
+                        <p class="description">
+                            A modular Python-based gym tracking application
+                            built with clean architecture-inspired design. It
+                            provides real-time exercise rep counting through
+                            MediaPipe and OpenCV, workout plan and set
+                            management with SQLite persistence, plus smart
+                            automation features like countdown/rest timers,
+                            inactivity-based auto stop, and live fatigue
+                            feedback for a seamless and refined fitness
+                            experience.
+                        </p>
+                        <Tag class="tag button-tag-closed" severity="secondary">
+                            <a href="#" @click.prevent>Closed Source</a>
+                        </Tag>
                     </div>
-                </div>
-            </template>
-            <template #content>
-                <div class="sub-container">
-                    <img src="../assets/foodorder.png" alt="">
-                </div>
-                <div class="sub-sub-container">
-                    <p class="description">
-                        A layered .NET 8.0 food ordering API built with clean architecture principles. 
-                        The system supports JWT-based authentication, role-based authorization, 
-                        real-time order notifications via SignalR, and delayed background processing 
-                        with Hangfire. It follows a structured separation of concerns using Entity 
-                        Framework Core, AutoMapper, and the Repository pattern to ensure scalability, 
-                        maintainability, and clean code practices.
-                    </p>
-                    <Tag class="tag button-tag" severity="success">
-                        <a href="https://github.com/TamasGyarmati/food-order-api" target="_blank">View Source on GitHub</a>
-                    </Tag>
-                </div>
-            </template>
-        </Card>
-        <Card class="myCard">
-             <template #title>
-                <div class="title-container">
-                    <p>Room Planner (Web Application)</p>
-                    <div class="tags">
-                        <Tag class="tag csharp" value="C#" />
-                        <Tag class="tag aspnet" value="ASP.NET Core" />
-                        <Tag class="tag html" value="HTML" />
-                        <Tag class="tag css" value="CSS" />
-                        <Tag class="tag javascript" value="JavaScript" />
-                        <Tag class="tag docker" value="Docker" />
+                </template>
+            </Card>
+            <Card class="myCard">
+                <template #title>
+                    <div class="title-container">
+                        <p>Social Media Platform (API)</p>
+                        <div class="tags">
+                            <Tag class="tag csharp" value="C#" />
+                            <Tag class="tag neutral" value="Identity" />
+                            <Tag class="tag neutral" value="EFCore" />
+                            <Tag class="tag neutral" value="ImageSharp" />
+                            <Tag class="tag neutral" value="Mailpit" />
+                        </div>
                     </div>
-                </div>
-            </template>
-            <template #content>
-                <div class="sub-container">
-                    <img src="../assets/furniture.png" alt="">
-                </div>
-                <div class="sub-sub-container">
-                    <p class="description">
-                        This application arranges given furniture items within a room so that none of them overlap. 
-                        The output is presented in a tabular format where each table cell represents 10 cm. 
-                        For example, if a bed measures 160 cm by 200 cm and is located in a corner, it occupies 16 cells in width and 20 cells in length. 
-                        These cells are merged, colored with a random color, and labeled with the furniture name, such as "Bed".
-                    </p>
-                    <Tag class="tag button-tag" severity="success">
-                        <a href="https://github.com/TamasGyarmati/furniture-arrangement-webapp" target="_blank">View Source on GitHub</a>
-                    </Tag>
-                </div>
-            </template>
-        </Card>
-        <Card class="myCard">
-             <template #title>
-                <div class="title-container">
-                    <p>Notion Automation (Script)</p>
-                    <div class="tags">
-                        <Tag class="tag python" value="Python" />
-                        <Tag class="tag yaml" value="YAML" />
-                        <Tag class="tag" severity="secondary" value="Notion API" />
-                        <Tag class="tag" severity="secondary" value="GitHub Actions" />
+                </template>
+                <template #content>
+                    <div class="sub-container">
+                        <img src="../assets/socialmedia.png" alt="" />
                     </div>
-                </div>
-            </template>
-            <template #content>
-                <div class="sub-container">
-                    <img src="../assets/notion.jpeg" alt="">
-                </div>
-                <div class="sub-sub-container">
-                    <p class="description">
-                        A Python script that automates the management of recurring weekly tasks in Notion. Using GitHub Actions and a YAML workflow configuration, the script runs automatically at a scheduled time each week and updates the corresponding tasks through the Notion API. API credentials are securely stored as GitHub Actions secrets rather than being exposed in the source code.
-                    </p>
-                    <Tag class="tag button-tag" severity="success">
-                        <a href="https://github.com/TamasGyarmati/notion-todo-script" target="_blank">View Source on GitHub</a>
-                    </Tag>
-                </div>
-            </template>
-        </Card>
-        <Card class="myCard">
-             <template #title>
-                <div class="title-container">
-                    <p>Shipment Manager (Console Application)</p>
-                    <div class="tags">
-                        <Tag class="tag csharp" value="C#" />                 
-                        <Tag class="tag" severity="secondary" value="EFCore" />   
-                        <Tag class="tag" severity="secondary" value="NUnit" />
-                        <Tag class="tag" severity="secondary" value="Reflection" />
-                        <Tag class="tag" severity="secondary" value="XML export" />
+                    <div class="sub-sub-container">
+                        <p class="description">
+                            A layered ASP.NET Core Web API built with clean
+                            architecture for a social media platform. Features
+                            JWT authentication via ASP.NET Core Identity,
+                            role-based access, and token-based email
+                            confirmation flows. It supports full user
+                            management, follows, posts, nested comments, and
+                            likes, alongside ImageSharp for media processing and
+                            Mailpit for email testing. All async workflows
+                            enforce cancellation tokens for optimal performance,
+                            laying the backend foundation for an upcoming
+                            full-stack web application.
+                        </p>
+                        <Tag class="tag button-tag" severity="success">
+                            <a
+                                href="https://github.com/TamasGyarmati/social-media-api"
+                                target="_blank"
+                                >View Source on GitHub</a
+                            >
+                        </Tag>
                     </div>
-                </div>
-            </template>
-            <template #content>
-                <div class="sub-container">
-                    <img src="../assets/console.png" alt="">
-                </div>
-                <div class="sub-sub-container">
-                    <p class="description">
-                        A layered .NET 8.0 console application designed to manage shipments, cargo, and pirate ships with a clear separation of responsibilities across components. 
-                        The system provides full CRUD operations, database interaction through Entity Framework Core, and supports filtering and searching of records. 
-                        It also includes automated delay handling and XML-based report generation, with LINQ used for data processing and NUnit tests ensuring reliable core functionality.
-                    </p>
-                    <Tag class="tag button-tag" severity="success">
-                        <a href="https://github.com/TamasGyarmati/shipment-manager-consoleapp" target="_blank">View Source on GitHub</a>
-                    </Tag>
-                </div>
-            </template>
-        </Card>
-    </div>
+                </template>
+            </Card>
+            <Card class="myCard">
+                <template #title>
+                    <div class="title-container">
+                        <p>Food Ordering (API)</p>
+                        <div class="tags">
+                            <Tag class="tag csharp" value="C#" />
+                            <Tag class="tag neutral" value="SignalR" />
+                            <Tag class="tag neutral" value="Hangfire" />
+                            <Tag class="tag neutral" value="Identity" />
+                            <Tag class="tag neutral" value="EFCore" />
+                            <Tag class="tag neutral" value="AutoMapper" />
+                        </div>
+                    </div>
+                </template>
+                <template #content>
+                    <div class="sub-container">
+                        <img src="../assets/foodorder.png" alt="" />
+                    </div>
+                    <div class="sub-sub-container">
+                        <p class="description">
+                            A layered .NET 8.0 food ordering API built with
+                            clean architecture principles. The system supports
+                            JWT-based authentication, role-based authorization,
+                            real-time order notifications via SignalR, and
+                            delayed background processing with Hangfire. It
+                            follows a structured separation of concerns using
+                            Entity Framework Core, AutoMapper, and the
+                            Repository pattern to ensure scalability,
+                            maintainability, and clean code practices.
+                        </p>
+                        <Tag class="tag button-tag" severity="success">
+                            <a
+                                href="https://github.com/TamasGyarmati/food-order-api"
+                                target="_blank"
+                                >View Source on GitHub</a
+                            >
+                        </Tag>
+                    </div>
+                </template>
+            </Card>
+            <Card class="myCard">
+                <template #title>
+                    <div class="title-container">
+                        <p>Room Planner (Web Application)</p>
+                        <div class="tags">
+                            <Tag class="tag csharp" value="C#" />
+                            <Tag class="tag aspnet" value="ASP.NET Core" />
+                            <Tag class="tag html" value="HTML" />
+                            <Tag class="tag css" value="CSS" />
+                            <Tag class="tag javascript" value="JavaScript" />
+                            <Tag class="tag docker" value="Docker" />
+                        </div>
+                    </div>
+                </template>
+                <template #content>
+                    <div class="sub-container">
+                        <img src="../assets/furniture.png" alt="" />
+                    </div>
+                    <div class="sub-sub-container">
+                        <p class="description">
+                            This application arranges given furniture items
+                            within a room so that none of them overlap. The
+                            output is presented in a tabular format where each
+                            table cell represents 10 cm. For example, if a bed
+                            measures 160 cm by 200 cm and is located in a
+                            corner, it occupies 16 cells in width and 20 cells
+                            in length. These cells are merged, colored with a
+                            random color, and labeled with the furniture name,
+                            such as "Bed".
+                        </p>
+                        <Tag class="tag button-tag" severity="success">
+                            <a
+                                href="https://github.com/TamasGyarmati/furniture-arrangement-webapp"
+                                target="_blank"
+                                >View Source on GitHub</a
+                            >
+                        </Tag>
+                    </div>
+                </template>
+            </Card>
+            <Card class="myCard">
+                <template #title>
+                    <div class="title-container">
+                        <p>Notion Automation (Script)</p>
+                        <div class="tags">
+                            <Tag class="tag python" value="Python" />
+                            <Tag class="tag yaml" value="YAML" />
+                            <Tag class="tag neutral" value="Notion API" />
+                            <Tag class="tag neutral" value="GitHub Actions" />
+                        </div>
+                    </div>
+                </template>
+                <template #content>
+                    <div class="sub-container">
+                        <img src="../assets/notion.jpeg" alt="" />
+                    </div>
+                    <div class="sub-sub-container">
+                        <p class="description">
+                            A Python script that automates the management of
+                            recurring weekly tasks in Notion. Using GitHub
+                            Actions and a YAML workflow configuration, the
+                            script runs automatically at a scheduled time each
+                            week and updates the corresponding tasks through the
+                            Notion API. API credentials are securely stored as
+                            GitHub Actions secrets rather than being exposed in
+                            the source code.
+                        </p>
+                        <Tag class="tag button-tag" severity="success">
+                            <a
+                                href="https://github.com/TamasGyarmati/notion-todo-script"
+                                target="_blank"
+                                >View Source on GitHub</a
+                            >
+                        </Tag>
+                    </div>
+                </template>
+            </Card>
+            <Card class="myCard">
+                <template #title>
+                    <div class="title-container">
+                        <p>Shipment Manager (Console Application)</p>
+                        <div class="tags">
+                            <Tag class="tag csharp" value="C#" />
+                            <Tag class="tag neutral" value="EFCore" />
+                            <Tag class="tag neutral" value="NUnit" />
+                            <Tag class="tag neutral" value="Reflection" />
+                            <Tag class="tag neutral" value="XML export" />
+                        </div>
+                    </div>
+                </template>
+                <template #content>
+                    <div class="sub-container">
+                        <img src="../assets/console.png" alt="" />
+                    </div>
+                    <div class="sub-sub-container">
+                        <p class="description">
+                            A layered .NET 8.0 console application designed to
+                            manage shipments, cargo, and pirate ships with a
+                            clear separation of responsibilities across
+                            components. The system provides full CRUD
+                            operations, database interaction through Entity
+                            Framework Core, and supports filtering and searching
+                            of records. It also includes automated delay
+                            handling and XML-based report generation, with LINQ
+                            used for data processing and NUnit tests ensuring
+                            reliable core functionality.
+                        </p>
+                        <Tag class="tag button-tag" severity="success">
+                            <a
+                                href="https://github.com/TamasGyarmati/shipment-manager-consoleapp"
+                                target="_blank"
+                                >View Source on GitHub</a
+                            >
+                        </Tag>
+                    </div>
+                </template>
+            </Card>
+        </div>
     </section>
 </template>
 
@@ -223,13 +280,13 @@
     padding: 15px 15px;
     transition: transform 0.2s ease;
 }
-::v-deep(.button-tag>a) {
+::v-deep(.button-tag > a) {
     text-decoration: none;
-    color: #86EFAC;
+    color: #86efac;
 }
-::v-deep(.button-tag-closed>a) {
+::v-deep(.button-tag-closed > a) {
     text-decoration: none;
-    color: #D4D4D8;
+    color: #d4d4d8;
     cursor: default;
 }
 ::v-deep(.button-tag-closed):hover,
@@ -237,7 +294,7 @@
     border-radius: 15px;
 }
 ::v-deep(.button-tag:has(a:active)) {
-    transform: scale(0.90);
+    transform: scale(0.9);
 }
 .container {
     display: grid;
@@ -253,25 +310,19 @@
 .myCard {
     display: flex;
     flex-direction: column;
-    transition: .4s;
+    transition: 0.4s;
     width: 100%;
     min-width: 0;
     background: rgba(0, 0, 0, 0.3);
 }
 .myCard:hover {
-  transform: translateY(-10px);
+    transform: translateY(-10px);
 }
 .sub-container {
     flex-grow: 1;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-.tag {
-    transition: .4s;
-    max-height: 20px;
-    margin: 0;
-    align-self: flex-start;
 }
 .tags {
     display: flex;
@@ -283,16 +334,16 @@
 .tag:hover {
     transform: scale(1.1);
 }
-.sub-container>img {
+.sub-container > img {
     width: 100%;
     max-width: 550px;
     margin-top: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     transition: transform 0.4s ease;
     max-height: 350px;
 }
-.sub-container>img:hover {
+.sub-container > img:hover {
     transform: scale(1.1);
 }
 .title-container {
@@ -304,7 +355,7 @@
     gap: 15px;
     width: 100%;
 }
-.title-container>p {
+.title-container > p {
     margin: 0 !important;
     line-height: 1.2;
 }
@@ -313,60 +364,84 @@
     text-align: justify;
     margin-bottom: 0;
 }
+::v-deep(.neutral) {
+    background-color: rgba(255, 255, 255, 0.08);
+    color: #d4d4d8;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
 ::v-deep(.python) {
-    background-color: #3776AB;
-    color: #FFD43B;
-    border: none;
+    background-color: rgba(55, 118, 171, 0.12);
+    color: #5b9bd5;
+    border: 1px solid rgba(55, 118, 171, 0.25);
 }
+
 ::v-deep(.yaml) {
-    background-color: #D8D8D8;
-    color: #CC2022;
-    border: none;
+    background-color: rgba(216, 216, 216, 0.08);
+    color: #e05254;
+    border: 1px solid rgba(204, 32, 34, 0.25);
 }
+
 ::v-deep(.mediapipe) {
-    background-color: #3198A6;
-    color: #FFFFFF;
-    border: none;
+    background-color: rgba(49, 152, 166, 0.1);
+    color: #5cc2d0;
+    border: 1px solid rgba(49, 152, 166, 0.25);
 }
+
 ::v-deep(.opencv) {
-    background-color: #27272A;
-    color: #D4D4D8;
-    border: none;
+    background-color: rgba(39, 39, 42, 0.35);
+    color: #d4d4d8;
+    border: 1px solid rgba(212, 212, 216, 0.15);
 }
+
 ::v-deep(.kivy) {
-    background-color: #2D2D2D;
-    color: #8BC34A;
-    border: none;
+    background-color: rgba(45, 45, 45, 0.3);
+    color: #9ccc65;
+    border: 1px solid rgba(139, 195, 74, 0.25);
 }
+
 ::v-deep(.docker) {
-    background-color: #1C63ED;
-    color: white;
-    border: none;
+    background-color: rgba(28, 99, 237, 0.1);
+    color: #5b91f5;
+    border: 1px solid rgba(28, 99, 237, 0.25);
 }
+
 ::v-deep(.sqlite) {
-    background-color: #003B57;
-    color: #FFFFFF;
-    border: none;
+    background-color: rgba(0, 59, 87, 0.15);
+    color: #4d9fc4;
+    border: 1px solid rgba(0, 59, 87, 0.35);
 }
-::v-deep(.aspnet), ::v-deep(.csharp) {
-    background-color: #5A2E90;
-    color: white;
-    border: none;
+
+::v-deep(.aspnet),
+::v-deep(.csharp) {
+    background-color: rgba(90, 46, 144, 0.12);
+    color: #b47bea;
+    border: 1px solid rgba(90, 46, 144, 0.3);
 }
+
 ::v-deep(.javascript) {
-    background-color: #F8E017;
-    color: black; 
-    border: none;
+    background-color: rgba(248, 224, 23, 0.1);
+    color: #f8e017;
+    border: 1px solid rgba(248, 224, 23, 0.25);
 }
+
 ::v-deep(.html) {
-    background-color: #F15B2A;
-    color: white;
-    border: none;
+    background-color: rgba(241, 91, 42, 0.1);
+    color: #f4774e;
+    border: 1px solid rgba(241, 91, 42, 0.25);
 }
+
 ::v-deep(.css) {
-    background-color: #2581FF;
-    color: white;
-    border: none;
+    background-color: rgba(37, 129, 255, 0.1);
+    color: #5b9cff;
+    border: 1px solid rgba(37, 129, 255, 0.25);
+}
+
+.tag {
+    transition: 0.25s ease;
+    max-height: 20px;
+    margin: 0;
+    align-self: flex-start;
 }
 @media (max-width: 1100px) {
     .container {
