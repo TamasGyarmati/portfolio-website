@@ -383,8 +383,8 @@ import Tag from "primevue/tag";
     width: 100%;
     max-width: 550px;
     margin-top: 20px;
-    border-radius: 10px;
-    border: 2px solid #91a08150;
+    border-radius: 20px;
+    /*border: 2px solid #91a08150;*/
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     transition: transform 0.4s ease;
     max-height: 350px;
