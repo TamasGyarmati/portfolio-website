@@ -49,7 +49,10 @@ import Tag from "primevue/tag";
                             <Tag class="tag angular" value="Angular" />
                             <Tag class="tag typescript" value="TypeScript" />
                             <Tag class="tag sass" value="Sass" />
-                            <Tag class="tag bootstrap" value="Bootstrap" />
+                            <Tag
+                                class="tag material"
+                                value="Angular Material UI"
+                            />
                             <Tag class="tag csharp" value="C#" />
                             <Tag class="tag csharp" value="ASP.NET Core" />
                             <Tag class="tag neutral" value="EFCore" />
@@ -381,6 +384,7 @@ import Tag from "primevue/tag";
     max-width: 550px;
     margin-top: 20px;
     border-radius: 10px;
+    border: 2px solid #91a08150;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     transition: transform 0.4s ease;
     max-height: 350px;
@@ -414,27 +418,28 @@ import Tag from "primevue/tag";
 ::v-deep(.typescript) {
     background-color: rgba(37, 122, 204, 0.12);
     color: #4d9bea;
-    border: 1px solid;
-    border-color: rgba(37, 122, 204, 0.25);
+    border: 1px solid rgba(37, 122, 204, 0.25);
+}
+::v-deep(.material) {
+    background-color: rgba(255, 64, 129, 0.12);
+    color: #ff4081;
+    border: 1px solid rgba(255, 64, 129, 0.25);
 }
 
 ::v-deep(.sass) {
     background-color: rgba(205, 100, 151, 0.1);
     color: #df7eaa;
-    border: 1px solid;
-    border-color: rgba(205, 100, 151, 0.25);
+    border: 1px solid rgba(205, 100, 151, 0.25);
 }
 ::v-deep(.bootstrap) {
     background-color: rgba(133, 18, 251, 0.1);
     color: #a75cff;
-    border: 1px solid;
-    border-color: rgba(133, 18, 251, 0.25);
+    border: 1px solid rgba(133, 18, 251, 0.25);
 }
 ::v-deep(.angular) {
     background-color: rgba(221, 3, 48, 0.1);
     color: #ff4568;
-    border: 1px solid;
-    border-color: rgba(221, 3, 48, 0.25);
+    border: 1px solid rgba(221, 3, 48, 0.25);
 }
 
 ::v-deep(.python) {
