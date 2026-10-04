@@ -27,12 +27,11 @@ import Tag from "primevue/tag";
                     <div class="sub-sub-container">
                         <p class="description">
                             A modular Python-based gym tracking application
-                            built with clean architecture-inspired design. It
-                            provides real-time exercise rep counting through
-                            MediaPipe and OpenCV, workout plan and set
-                            management with SQLite persistence, plus smart
-                            automation features like countdown/rest timers,
-                            inactivity-based auto stop, and live fatigue
+                            build in Python using MediaPipe and OpenCV. It
+                            provides real-time exercise rep counting, workout
+                            plan and set management with SQLite persistence,
+                            plus smart automation features like countdown/rest
+                            timers, inactivity-based auto stop, and live fatigue
                             feedback for a seamless and refined fitness
                             experience.
                         </p>
@@ -45,9 +44,50 @@ import Tag from "primevue/tag";
             <Card class="myCard">
                 <template #title>
                     <div class="title-container">
+                        <p>Venus (Web Application)</p>
+                        <div class="tags">
+                            <Tag class="tag angular" value="Angular" />
+                            <Tag class="tag typescript" value="TypeScript" />
+                            <Tag class="tag sass" value="Sass" />
+                            <Tag class="tag bootstrap" value="Bootstrap" />
+                            <Tag class="tag csharp" value="C#" />
+                            <Tag class="tag csharp" value="ASP.NET Core" />
+                            <Tag class="tag neutral" value="EFCore" />
+                        </div>
+                    </div>
+                </template>
+                <template #content>
+                    <div class="sub-container">
+                        <img src="../assets/venus.png" alt="" />
+                    </div>
+                    <div class="sub-sub-container">
+                        <p class="description">
+                            A university subject and teacher management
+                            application built with Angular frontend and C#
+                            backend. It provides full CRUD for subjects and
+                            teachers with SQL Server persistence, served through
+                            an Angular Material interface, plus features like
+                            teacher-subject linking, JWT-secured routes, and
+                            session-aware access for a seamless and refined
+                            academic experience.
+                        </p>
+                        <Tag class="tag button-tag" severity="success">
+                            <a
+                                href="https://github.com/TamasGyarmati/venus-webapp"
+                                target="_blank"
+                                >View Source on GitHub</a
+                            >
+                        </Tag>
+                    </div>
+                </template>
+            </Card>
+            <Card class="myCard">
+                <template #title>
+                    <div class="title-container">
                         <p>Social Media Platform (API)</p>
                         <div class="tags">
                             <Tag class="tag csharp" value="C#" />
+                            <Tag class="tag aspnet" value="ASP.NET Core" />
                             <Tag class="tag neutral" value="Identity" />
                             <Tag class="tag neutral" value="EFCore" />
                             <Tag class="tag neutral" value="ImageSharp" />
@@ -89,6 +129,7 @@ import Tag from "primevue/tag";
                         <p>Food Ordering (API)</p>
                         <div class="tags">
                             <Tag class="tag csharp" value="C#" />
+                            <Tag class="tag aspnet" value="ASP.NET Core" />
                             <Tag class="tag neutral" value="SignalR" />
                             <Tag class="tag neutral" value="Hangfire" />
                             <Tag class="tag neutral" value="Identity" />
@@ -103,8 +144,8 @@ import Tag from "primevue/tag";
                     </div>
                     <div class="sub-sub-container">
                         <p class="description">
-                            A layered .NET 8.0 food ordering API built with
-                            clean architecture principles. The system supports
+                            A .NET 8.0 food ordering API built with clean
+                            architecture principles. The system supports
                             JWT-based authentication, role-based authorization,
                             real-time order notifications via SignalR, and
                             delayed background processing with Hangfire. It
@@ -130,9 +171,10 @@ import Tag from "primevue/tag";
                         <div class="tags">
                             <Tag class="tag csharp" value="C#" />
                             <Tag class="tag aspnet" value="ASP.NET Core" />
+                            <Tag class="tag javascript" value="JavaScript" />
                             <Tag class="tag html" value="HTML" />
                             <Tag class="tag css" value="CSS" />
-                            <Tag class="tag javascript" value="JavaScript" />
+                            <Tag class="tag bootstrap" value="Bootstrap" />
                             <Tag class="tag docker" value="Docker" />
                         </div>
                     </div>
@@ -369,13 +411,37 @@ import Tag from "primevue/tag";
     color: #d4d4d8;
     border: 1px solid rgba(255, 255, 255, 0.15);
 }
+::v-deep(.typescript) {
+    background-color: rgba(37, 122, 204, 0.12);
+    color: #4d9bea;
+    border: 1px solid;
+    border-color: rgba(37, 122, 204, 0.25);
+}
+
+::v-deep(.sass) {
+    background-color: rgba(205, 100, 151, 0.1);
+    color: #df7eaa;
+    border: 1px solid;
+    border-color: rgba(205, 100, 151, 0.25);
+}
+::v-deep(.bootstrap) {
+    background-color: rgba(133, 18, 251, 0.1);
+    color: #a75cff;
+    border: 1px solid;
+    border-color: rgba(133, 18, 251, 0.25);
+}
+::v-deep(.angular) {
+    background-color: rgba(221, 3, 48, 0.1);
+    color: #ff4568;
+    border: 1px solid;
+    border-color: rgba(221, 3, 48, 0.25);
+}
 
 ::v-deep(.python) {
     background-color: rgba(55, 118, 171, 0.12);
     color: #5b9bd5;
     border: 1px solid rgba(55, 118, 171, 0.25);
 }
-
 ::v-deep(.yaml) {
     background-color: rgba(216, 216, 216, 0.08);
     color: #e05254;
