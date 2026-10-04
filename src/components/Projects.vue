@@ -58,7 +58,7 @@ import Tag from "primevue/tag";
                 </template>
                 <template #content>
                     <div class="sub-container">
-                        <img src="../assets/venus.png" alt="" />
+                        <img src="../assets/venus3.png" alt="" />
                     </div>
                     <div class="sub-sub-container">
                         <p class="description">
@@ -181,7 +181,7 @@ import Tag from "primevue/tag";
                 </template>
                 <template #content>
                     <div class="sub-container">
-                        <img src="../assets/furniture.png" alt="" />
+                        <img src="../assets/furniture2.png" alt="" />
                     </div>
                     <div class="sub-sub-container">
                         <p class="description">
@@ -219,7 +219,7 @@ import Tag from "primevue/tag";
                 </template>
                 <template #content>
                     <div class="sub-container">
-                        <img src="../assets/notion.jpeg" alt="" />
+                        <img src="../assets/notion2.png" alt="" />
                     </div>
                     <div class="sub-sub-container">
                         <p class="description">
