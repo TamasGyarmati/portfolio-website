@@ -26,7 +26,7 @@ import Tag from "primevue/tag";
                     </div>
                     <div class="sub-sub-container">
                         <p class="description">
-                            A modular Python-based gym tracking application
+                            Python-based gym tracking application
                             build in Python using MediaPipe and OpenCV. It
                             provides real-time exercise rep counting, workout
                             plan and set management with SQLite persistence,
@@ -44,7 +44,7 @@ import Tag from "primevue/tag";
             <Card class="myCard">
                 <template #title>
                     <div class="title-container">
-                        <p>Venus (Web Application)</p>
+                        <p>Astra (Web Application)</p>
                         <div class="tags">
                             <Tag class="tag angular" value="Angular" />
                             <Tag class="tag typescript" value="TypeScript" />
@@ -61,11 +61,11 @@ import Tag from "primevue/tag";
                 </template>
                 <template #content>
                     <div class="sub-container">
-                        <img src="../assets/venus3.png" alt="" />
+                        <img src="../assets/astra.png" alt="" />
                     </div>
                     <div class="sub-sub-container">
                         <p class="description">
-                            A university subject and teacher management
+                            University subject and teacher management
                             application built with Angular frontend and C#
                             backend. It provides full CRUD for subjects and
                             teachers with SQL Server persistence, served through
@@ -76,7 +76,7 @@ import Tag from "primevue/tag";
                         </p>
                         <Tag class="tag button-tag" severity="success">
                             <a
-                                href="https://github.com/TamasGyarmati/venus-webapp"
+                                href="https://github.com/TamasGyarmati/astra-webapp"
                                 target="_blank"
                                 >View Source on GitHub</a
                             >
@@ -104,7 +104,7 @@ import Tag from "primevue/tag";
                     </div>
                     <div class="sub-sub-container">
                         <p class="description">
-                            A layered ASP.NET Core Web API built with clean
+                            Layered ASP.NET Core Web API built with clean
                             architecture for a social media platform. Features
                             JWT authentication via ASP.NET Core Identity,
                             role-based access, and token-based email
@@ -147,7 +147,7 @@ import Tag from "primevue/tag";
                     </div>
                     <div class="sub-sub-container">
                         <p class="description">
-                            A .NET 8.0 food ordering API built with clean
+                            Food ordering API built with clean
                             architecture principles. The system supports
                             JWT-based authentication, role-based authorization,
                             real-time order notifications via SignalR, and
@@ -226,7 +226,7 @@ import Tag from "primevue/tag";
                     </div>
                     <div class="sub-sub-container">
                         <p class="description">
-                            A Python script that automates the management of
+                            Python script that automates the management of
                             recurring weekly tasks in Notion. Using GitHub
                             Actions and a YAML workflow configuration, the
                             script runs automatically at a scheduled time each
@@ -264,7 +264,7 @@ import Tag from "primevue/tag";
                     </div>
                     <div class="sub-sub-container">
                         <p class="description">
-                            A layered .NET 8.0 console application designed to
+                            Layered console application designed to
                             manage shipments, cargo, and pirate ships with a
                             clear separation of responsibilities across
                             components. The system provides full CRUD
