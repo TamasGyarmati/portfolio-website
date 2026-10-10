@@ -26,12 +26,12 @@ import Tag from "primevue/tag";
                     </div>
                     <div class="sub-sub-container">
                         <p class="description">
-                            Python-based gym tracking application
-                            build in Python using MediaPipe and OpenCV. It
-                            provides real-time exercise rep counting, workout
-                            plan and set management with SQLite persistence,
-                            plus smart automation features like countdown/rest
-                            timers, inactivity-based auto stop, and live fatigue
+                            Python-based gym tracking application build in
+                            Python using MediaPipe and OpenCV. It provides
+                            real-time exercise rep counting, workout plan and
+                            set management with SQLite persistence, plus smart
+                            automation features like countdown/rest timers,
+                            inactivity-based auto stop, and live fatigue
                             feedback for a seamless and refined fitness
                             experience.
                         </p>
@@ -87,10 +87,17 @@ import Tag from "primevue/tag";
             <Card class="myCard">
                 <template #title>
                     <div class="title-container">
-                        <p>Social Media Platform (API)</p>
+                        <p>Social (Web Application)</p>
                         <div class="tags">
                             <Tag class="tag csharp" value="C#" />
                             <Tag class="tag aspnet" value="ASP.NET Core" />
+                            <Tag class="tag angular" value="Angular" />
+                            <Tag class="tag typescript" value="TypeScript" />
+                            <Tag
+                                class="tag material"
+                                value="Angular Material UI"
+                            />
+                            <Tag class="tag sass" value="Sass" />
                             <Tag class="tag neutral" value="Identity" />
                             <Tag class="tag neutral" value="EFCore" />
                             <Tag class="tag neutral" value="ImageSharp" />
@@ -100,25 +107,21 @@ import Tag from "primevue/tag";
                 </template>
                 <template #content>
                     <div class="sub-container">
-                        <img src="../assets/socialmedia.png" alt="" />
+                        <img src="../assets/social.png" alt="" />
                     </div>
                     <div class="sub-sub-container">
                         <p class="description">
-                            Layered ASP.NET Core Web API built with clean
-                            architecture for a social media platform. Features
-                            JWT authentication via ASP.NET Core Identity,
-                            role-based access, and token-based email
-                            confirmation flows. It supports full user
-                            management, follows, posts, nested comments, and
-                            likes, alongside ImageSharp for media processing and
-                            Mailpit for email testing. All async workflows
-                            enforce cancellation tokens for optimal performance,
-                            laying the backend foundation for an upcoming
-                            full-stack web application.
+                            Social is a feature-rich full-stack web application
+                            built with ASP.NET Core (C#) and Angular. It
+                            supports posts, nested comments, likes, user
+                            follows, JWT authentication, email confirmation, and
+                            image processing. The backend is built around
+                            advanced concepts, with ongoing development focused
+                            on completing the Angular frontend.
                         </p>
                         <Tag class="tag button-tag" severity="success">
                             <a
-                                href="https://github.com/TamasGyarmati/social-media-api"
+                                href="https://github.com/TamasGyarmati/social-web-app"
                                 target="_blank"
                                 >View Source on GitHub</a
                             >
@@ -147,15 +150,15 @@ import Tag from "primevue/tag";
                     </div>
                     <div class="sub-sub-container">
                         <p class="description">
-                            Food ordering API built with clean
-                            architecture principles. The system supports
-                            JWT-based authentication, role-based authorization,
-                            real-time order notifications via SignalR, and
-                            delayed background processing with Hangfire. It
-                            follows a structured separation of concerns using
-                            Entity Framework Core, AutoMapper, and the
-                            Repository pattern to ensure scalability,
-                            maintainability, and clean code practices.
+                            Food ordering API built with clean architecture
+                            principles. The system supports JWT-based
+                            authentication, role-based authorization, real-time
+                            order notifications via SignalR, and delayed
+                            background processing with Hangfire. It follows a
+                            structured separation of concerns using Entity
+                            Framework Core, AutoMapper, and the Repository
+                            pattern to ensure scalability, maintainability, and
+                            clean code practices.
                         </p>
                         <Tag class="tag button-tag" severity="success">
                             <a
@@ -264,16 +267,16 @@ import Tag from "primevue/tag";
                     </div>
                     <div class="sub-sub-container">
                         <p class="description">
-                            Layered console application designed to
-                            manage shipments, cargo, and pirate ships with a
-                            clear separation of responsibilities across
-                            components. The system provides full CRUD
-                            operations, database interaction through Entity
-                            Framework Core, and supports filtering and searching
-                            of records. It also includes automated delay
-                            handling and XML-based report generation, with LINQ
-                            used for data processing and NUnit tests ensuring
-                            reliable core functionality.
+                            Layered console application designed to manage
+                            shipments, cargo, and pirate ships with a clear
+                            separation of responsibilities across components.
+                            The system provides full CRUD operations, database
+                            interaction through Entity Framework Core, and
+                            supports filtering and searching of records. It also
+                            includes automated delay handling and XML-based
+                            report generation, with LINQ used for data
+                            processing and NUnit tests ensuring reliable core
+                            functionality.
                         </p>
                         <Tag class="tag button-tag" severity="success">
                             <a
