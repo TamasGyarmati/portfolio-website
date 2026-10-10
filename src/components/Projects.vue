@@ -44,49 +44,6 @@ import Tag from "primevue/tag";
             <Card class="myCard">
                 <template #title>
                     <div class="title-container">
-                        <p>Astra (Web Application)</p>
-                        <div class="tags">
-                            <Tag class="tag angular" value="Angular" />
-                            <Tag class="tag typescript" value="TypeScript" />
-                            <Tag class="tag sass" value="Sass" />
-                            <Tag
-                                class="tag material"
-                                value="Angular Material UI"
-                            />
-                            <Tag class="tag csharp" value="C#" />
-                            <Tag class="tag csharp" value="ASP.NET Core" />
-                            <Tag class="tag neutral" value="EFCore" />
-                        </div>
-                    </div>
-                </template>
-                <template #content>
-                    <div class="sub-container">
-                        <img src="../assets/astra.png" alt="" />
-                    </div>
-                    <div class="sub-sub-container">
-                        <p class="description">
-                            University subject and teacher management
-                            application built with Angular frontend and C#
-                            backend. It provides full CRUD for subjects and
-                            teachers with SQL Server persistence, served through
-                            an Angular Material interface, plus features like
-                            teacher-subject linking, JWT-secured routes, and
-                            session-aware access for a seamless and refined
-                            academic experience.
-                        </p>
-                        <Tag class="tag button-tag" severity="success">
-                            <a
-                                href="https://github.com/TamasGyarmati/astra-webapp"
-                                target="_blank"
-                                >View Source on GitHub</a
-                            >
-                        </Tag>
-                    </div>
-                </template>
-            </Card>
-            <Card class="myCard">
-                <template #title>
-                    <div class="title-container">
                         <p>Social (Web Application)</p>
                         <div class="tags">
                             <Tag class="tag csharp" value="C#" />
@@ -122,6 +79,49 @@ import Tag from "primevue/tag";
                         <Tag class="tag button-tag" severity="success">
                             <a
                                 href="https://github.com/TamasGyarmati/social-web-app"
+                                target="_blank"
+                                >View Source on GitHub</a
+                            >
+                        </Tag>
+                    </div>
+                </template>
+            </Card>
+            <Card class="myCard">
+                <template #title>
+                    <div class="title-container">
+                        <p>Astra (Web Application)</p>
+                        <div class="tags">
+                            <Tag class="tag angular" value="Angular" />
+                            <Tag class="tag typescript" value="TypeScript" />
+                            <Tag class="tag sass" value="Sass" />
+                            <Tag
+                                class="tag material"
+                                value="Angular Material UI"
+                            />
+                            <Tag class="tag csharp" value="C#" />
+                            <Tag class="tag csharp" value="ASP.NET Core" />
+                            <Tag class="tag neutral" value="EFCore" />
+                        </div>
+                    </div>
+                </template>
+                <template #content>
+                    <div class="sub-container">
+                        <img src="../assets/astra.png" alt="" />
+                    </div>
+                    <div class="sub-sub-container">
+                        <p class="description">
+                            University subject and teacher management
+                            application built with Angular frontend and C#
+                            backend. It provides full CRUD for subjects and
+                            teachers with SQL Server persistence, served through
+                            an Angular Material interface, plus features like
+                            teacher-subject linking, JWT-secured routes, and
+                            session-aware access for a seamless and refined
+                            academic experience.
+                        </p>
+                        <Tag class="tag button-tag" severity="success">
+                            <a
+                                href="https://github.com/TamasGyarmati/astra-webapp"
                                 target="_blank"
                                 >View Source on GitHub</a
                             >
