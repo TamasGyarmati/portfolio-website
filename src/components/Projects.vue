@@ -50,11 +50,11 @@ import Tag from "primevue/tag";
                             <Tag class="tag aspnet" value="ASP.NET Core" />
                             <Tag class="tag angular" value="Angular" />
                             <Tag class="tag typescript" value="TypeScript" />
+                            <Tag class="tag sass" value="Sass" />
                             <Tag
                                 class="tag material"
                                 value="Angular Material UI"
                             />
-                            <Tag class="tag sass" value="Sass" />
                             <Tag class="tag neutral" value="Identity" />
                             <Tag class="tag neutral" value="EFCore" />
                             <Tag class="tag neutral" value="ImageSharp" />
