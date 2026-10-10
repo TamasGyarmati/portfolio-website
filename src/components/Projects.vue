@@ -91,6 +91,8 @@ import Tag from "primevue/tag";
                     <div class="title-container">
                         <p>Astra (Web Application)</p>
                         <div class="tags">
+                            <Tag class="tag csharp" value="C#" />
+                            <Tag class="tag csharp" value="ASP.NET Core" />
                             <Tag class="tag angular" value="Angular" />
                             <Tag class="tag typescript" value="TypeScript" />
                             <Tag class="tag sass" value="Sass" />
@@ -98,8 +100,6 @@ import Tag from "primevue/tag";
                                 class="tag material"
                                 value="Angular Material UI"
                             />
-                            <Tag class="tag csharp" value="C#" />
-                            <Tag class="tag csharp" value="ASP.NET Core" />
                             <Tag class="tag neutral" value="EFCore" />
                         </div>
                     </div>
