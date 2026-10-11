@@ -173,47 +173,6 @@ import Tag from "primevue/tag";
             <Card class="myCard">
                 <template #title>
                     <div class="title-container">
-                        <p>Room Planner (Web Application)</p>
-                        <div class="tags">
-                            <Tag class="tag csharp" value="C#" />
-                            <Tag class="tag aspnet" value="ASP.NET Core" />
-                            <Tag class="tag javascript" value="JavaScript" />
-                            <Tag class="tag html" value="HTML" />
-                            <Tag class="tag css" value="CSS" />
-                            <Tag class="tag bootstrap" value="Bootstrap" />
-                            <Tag class="tag docker" value="Docker" />
-                        </div>
-                    </div>
-                </template>
-                <template #content>
-                    <div class="sub-container">
-                        <img src="../assets/furniture2.png" alt="" />
-                    </div>
-                    <div class="sub-sub-container">
-                        <p class="description">
-                            This application arranges given furniture items
-                            within a room so that none of them overlap. The
-                            output is presented in a tabular format where each
-                            table cell represents 10 cm. For example, if a bed
-                            measures 160 cm by 200 cm and is located in a
-                            corner, it occupies 16 cells in width and 20 cells
-                            in length. These cells are merged, colored with a
-                            random color, and labeled with the furniture name,
-                            such as "Bed".
-                        </p>
-                        <Tag class="tag button-tag" severity="success">
-                            <a
-                                href="https://github.com/TamasGyarmati/furniture-arrangement-webapp"
-                                target="_blank"
-                                >View Source on GitHub</a
-                            >
-                        </Tag>
-                    </div>
-                </template>
-            </Card>
-            <Card class="myCard">
-                <template #title>
-                    <div class="title-container">
                         <p>Notion Automation (Script)</p>
                         <div class="tags">
                             <Tag class="tag python" value="Python" />
