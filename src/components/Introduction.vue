@@ -4,7 +4,7 @@
 <template>
     <div class="container">
         <p>
-            Software developer with
+            Computer Engineering Student  with
             professional experience as a
             Software Developer Intern at
             Bosch, primarly working with
@@ -18,7 +18,12 @@
             Interested in building
             maintainable software and
             working in collaborative
-            development environments.
+            development environments. I value
+            clean, maintainable code, thoughtful
+            software design, and effective teamwork.
+            I also have hands-on experience with AI-
+            powered development tools such as Claude Code
+            and Cursor to support my development workflow.
         </p>
     </div>
 </template>
