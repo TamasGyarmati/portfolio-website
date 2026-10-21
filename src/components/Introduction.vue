@@ -8,13 +8,13 @@
             professional experience as a
             Software Developer Intern at
             Bosch, primarly working with
-            .NET/C#, Vue.js, automated testing
+            C# / ASP.NET Core, Vue.js, xUnit 
+            for integration testing,
+            API test automation
             and Azure DevOps. Currently
-            expanding my frontend
-            knowledge with Angular and
-            TypeScript while continuing to
-            develop my backend and
-            software engineering skills.
+            deepening my knowledge of Angular
+            and TypeScript while further
+            developing my software engineering skills.
             Interested in building
             maintainable software and
             working in collaborative
