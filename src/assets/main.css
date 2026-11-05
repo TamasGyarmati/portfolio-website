@@ -9,7 +9,7 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 3.25rem;
+  scroll-padding-top: 0;
 }
 
 body {
@@ -19,18 +19,15 @@ body {
 
 .page-section {
   min-height: 100vh;
-  min-height: 100dvh;
+  min-height: 100svh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: var(--section-padding-y) var(--section-padding-x);
+  padding-top: calc(var(--section-padding-y) + 3.25rem);
   gap: var(--section-gap);
   box-sizing: border-box;
-}
-
-.page-section--tall {
-  justify-content: flex-start;
 }
 
 .page-section--hero {
@@ -68,10 +65,15 @@ html, body {
   opacity: 0;
   transform: translate3d(-60px, 0, 0);
   transition: opacity 1.0s ease, transform 1.0s ease;
-  will-change: transform, opacity;
 }
 
 .reveal.active {
   opacity: 1;
   transform: translate3d(0, 0, 0);
+}
+
+@media (max-width: 768px) {
+  .reveal {
+    transform: translate3d(0, 40px, 0);
+  }
 }

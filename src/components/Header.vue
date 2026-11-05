@@ -1,7 +1,7 @@
 <template>
     <div class="title-group">
         <h1 class="myHeader typewriter">Tamas Gyarmati</h1>
-        <h1 class="myHeaderType">Software Engineering student</h1>
+        <h1 class="myHeaderType">Computer Engineering student</h1>
     </div>
     <div class="subclass">
         <h2>
@@ -39,7 +39,7 @@
 
     .myHeader {
         font-size: clamp(36px, 8vw, 80px);
-        letter-spacing: 10px;
+        letter-spacing: clamp(2px, 1.2vw, 10px);
     }
 
     .myHeaderType {

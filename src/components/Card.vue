@@ -57,12 +57,11 @@ import Card from 'primevue/card';
   padding-bottom: 15px;
   padding-left: 15px;
   padding-right: 20px;
-  list-style-type: none;
+  list-style-type: "#";
   text-align: justify;
 }
 
 .uniList > li::marker {
-  content: "#"; 
   color: white;
   font-size: 16px;
 }
@@ -98,6 +97,7 @@ import Card from 'primevue/card';
     padding-left: 10px;
     padding-right: 10px;
     padding-bottom: 10px;
+    text-align: left;
   }
 }
 

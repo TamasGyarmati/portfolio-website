@@ -22,7 +22,7 @@ import Tag from "primevue/tag";
                 </template>
                 <template #content>
                     <div class="sub-container">
-                        <img src="../assets/gym.png" alt="" />
+                        <img src="../assets/gym.png" alt="" loading="lazy" decoding="async" />
                     </div>
                     <div class="sub-sub-container">
                         <p class="description">
@@ -64,7 +64,7 @@ import Tag from "primevue/tag";
                 </template>
                 <template #content>
                     <div class="sub-container">
-                        <img src="../assets/social.png" alt="" />
+                        <img src="../assets/social.png" alt="" loading="lazy" decoding="async" />
                     </div>
                     <div class="sub-sub-container">
                         <p class="description">
@@ -106,7 +106,7 @@ import Tag from "primevue/tag";
                 </template>
                 <template #content>
                     <div class="sub-container">
-                        <img src="../assets/astra.png" alt="" />
+                        <img src="../assets/astra.png" alt="" loading="lazy" decoding="async" />
                     </div>
                     <div class="sub-sub-container">
                         <p class="description">
@@ -146,7 +146,7 @@ import Tag from "primevue/tag";
                 </template>
                 <template #content>
                     <div class="sub-container">
-                        <img src="../assets/foodorder.png" alt="" />
+                        <img src="../assets/foodorder.png" alt="" loading="lazy" decoding="async" />
                     </div>
                     <div class="sub-sub-container">
                         <p class="description">
@@ -184,7 +184,7 @@ import Tag from "primevue/tag";
                 </template>
                 <template #content>
                     <div class="sub-container">
-                        <img src="../assets/notion2.png" alt="" />
+                        <img src="../assets/notion2.png" alt="" loading="lazy" decoding="async" />
                     </div>
                     <div class="sub-sub-container">
                         <p class="description">
@@ -222,7 +222,7 @@ import Tag from "primevue/tag";
                 </template>
                 <template #content>
                     <div class="sub-container">
-                        <img src="../assets/console.png" alt="" />
+                        <img src="../assets/console.png" alt="" loading="lazy" decoding="async" />
                     </div>
                     <div class="sub-sub-container">
                         <p class="description">

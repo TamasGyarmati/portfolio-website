@@ -26,7 +26,7 @@
     <section id="experience" class="page-section" v-scroll-animate>
       <Cards />
     </section>
-    <section id="projects" class="page-section page-section--tall" v-scroll-animate>
+    <section id="projects" class="page-section" v-scroll-animate>
       <Projects />
     </section>
     <ScrollProgressBar />
@@ -44,6 +44,7 @@
   height: 100vh;
   object-fit: cover;
   pointer-events: none;
+  transform: translateZ(0);
 }
 
 :deep(.p-scrolltop) {
