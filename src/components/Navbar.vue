@@ -52,9 +52,7 @@ function closeMenu() {
   justify-content: center;
   min-height: 3.25rem;
   padding: 0.75rem 1.25rem;
-  background: rgba(0, 0, 0, 0.35);
-  backdrop-filter: blur(3px);
-  -webkit-backdrop-filter: blur(3px);
+  background: rgba(0, 0, 0, 0.4);
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
   box-sizing: border-box;
 }
@@ -118,8 +116,6 @@ function closeMenu() {
     max-width: none;
     padding: 0.5rem 0;
     background: rgba(0, 0, 0, 0.85);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
     border-bottom: 0px solid rgba(255, 255, 255, 0.08);
     opacity: 0;
     visibility: hidden;

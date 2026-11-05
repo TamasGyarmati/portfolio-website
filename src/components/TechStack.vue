@@ -216,6 +216,7 @@ import Tag from "primevue/tag";
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 15px;
 }
 
 .programming-languages,
@@ -223,6 +224,8 @@ import Tag from "primevue/tag";
 .database,
 .tools-technologies {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
     gap: 10px;
 }
 
@@ -263,7 +266,7 @@ import Tag from "primevue/tag";
     .web-development,
     .database,
     .tools-technologies {
-        flex-wrap: wrap;
+        justify-content: flex-start;
         gap: 8px;
     }
 

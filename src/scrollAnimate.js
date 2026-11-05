@@ -1,22 +1,17 @@
 export default {
   mounted(el) {
-  if (window.innerWidth <= 768) {
-      return;
-    }
-
     el.classList.add('reveal');
 
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
           el.classList.add('active');
-        } else {
-          el.classList.remove('active');
+          observer.disconnect();
         }
       },
       {
-        threshold: 0.15,
-        rootMargin: '0px 0px -10% 0px',
+        threshold: 0,
+        rootMargin: '0px 0px -25% 0px',
       }
     );
 

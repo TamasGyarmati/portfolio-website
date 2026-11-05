@@ -2,7 +2,7 @@
   <div class="scroll-progress">
     <div
       class="scroll-progress__bar"
-      :style="{ height: `${progress}%` }"
+      :style="{ transform: `scaleY(${progress / 100})` }"
     />
   </div>
 </template>
@@ -11,15 +11,20 @@
 import { ref, onMounted, onUnmounted } from 'vue';
 
 const progress = ref(0);
+let frame = 0;
 
 const updateProgress = () => {
-  const scrollTop = window.scrollY;
-  const maxScroll =
-    document.documentElement.scrollHeight - window.innerHeight;
+  if (frame) return;
+  frame = requestAnimationFrame(() => {
+    frame = 0;
+    const scrollTop = window.scrollY;
+    const maxScroll =
+      document.documentElement.scrollHeight - window.innerHeight;
 
-  progress.value = maxScroll > 0
-    ? (scrollTop / maxScroll) * 100
-    : 0;
+    progress.value = maxScroll > 0
+      ? (scrollTop / maxScroll) * 100
+      : 0;
+  });
 };
 
 onMounted(() => {
@@ -31,6 +36,7 @@ onMounted(() => {
 onUnmounted(() => {
   window.removeEventListener('scroll', updateProgress);
   window.removeEventListener('resize', updateProgress);
+  cancelAnimationFrame(frame);
 });
 </script>
 
@@ -48,7 +54,9 @@ onUnmounted(() => {
 
 .scroll-progress__bar {
   width: 100%;
-  height: 0;
+  height: 100%;
+  transform: scaleY(0);
+  transform-origin: top;
 
   background: linear-gradient(
     to bottom,
@@ -58,7 +66,5 @@ onUnmounted(() => {
 
   box-shadow:
     0 0 10px rgba(145, 160, 129, 0.4);
-
-  transition: height 0.05s linear;
 }
 </style>
