@@ -21,8 +21,7 @@
             development environments. I value
             clean, maintainable code, thoughtful
             software design, and effective teamwork.
-            I also have hands-on experience with AI-
-            powered development tools such as Claude Code
+            I also have hands-on experience with AI-powered development tools such as Claude Code
             and Cursor to support my development workflow.
         </p>
     </div>
